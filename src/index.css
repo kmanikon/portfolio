@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Raleway];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+}
+
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(112, 157, 255, 0.8),
+        hsla(242, 74%, 61%, 0.8)   
+    )!important;
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    /*border: 1px solid #ccc;*/
+    padding: 10px;
+    width: 300px;
+    /*background-color: #f5f7fb;*/
+    text-align: center;
+  }
+  
+  .card-header {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .list {
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  
+  .list li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  
+
+  .project-card {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  /*
+  .project-details {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  */
+  
+  /*
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-description {
+    color: #555;
+  }
+  */
+  
+  .project-image {
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
