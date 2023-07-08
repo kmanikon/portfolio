@@ -29,7 +29,8 @@ const projects = {
     image: Acoustic_Release_Image_3,
     link: '',
     git: 'https://github.com/QueMona98/acoustic-release/tree/main'
-  }
+  },
+  
 };
 
 
