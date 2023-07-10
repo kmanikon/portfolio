@@ -25,8 +25,8 @@ const projects = {
   },
   Capstone: {
     title: 'Acoustic Release',
-    desc: "Worked in a team to build an undersea probe for tracking whale movements, developed embedded software needed to interface with the probe's onboard electronics",
-    tools: 'C, Python',
+    desc: "Team project to build an undersea probe for tracking seasonal whale migrations",
+    tools: 'C, Python, Matplotlib',
     image: Acoustic_Release_Image_3,
     link: '',
     git: 'https://github.com/QueMona98/acoustic-release/tree/main'
