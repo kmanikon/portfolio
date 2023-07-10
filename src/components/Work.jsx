@@ -4,6 +4,7 @@ import aws from "../assets/aws.png";
 import BugTrackerImg from '../assets/BugTrackerImg.png';
 import SoundbytesImg from '../assets/SoundbytesImg.png';
 import Acoustic_Release_Image_3 from '../assets/Acoustic_Release_Image_3.png';
+import Quakes_Page from '../assets/Quakes_Page.png';
 
 const projects = {
  Bugtracker: {
@@ -30,6 +31,14 @@ const projects = {
     link: '',
     git: 'https://github.com/QueMona98/acoustic-release/tree/main'
   },
+  Quakes: {
+    title: 'Quake Search',
+    desc: 'Website for visualizing earthquake data collected by the US Geological Survey',
+    tools: 'Javascript, React, Tailwind CSS',
+    image: Quakes_Page,
+    link: 'https://quakes-peach.vercel.app/home',
+    git: 'https://github.com/kmanikon/Quakes_Updated'
+  }
   
 };
 
@@ -238,6 +247,61 @@ const Work = () => {
             </div>
 
           </div>
+
+
+          <p className="my-11"></p>
+
+
+          <div>
+  
+          <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+              <div className='sm:text-right text-4xl font-bold my-0'>
+                <p className="my-0 leading-7">{projects['Quakes'].title}</p>
+
+                
+
+                <p className='text-[#8892b0] py-4 max-w-[800px] text-xl my-0 leading-7'>
+                  <div>{projects['Quakes'].desc}</div>
+                  
+                </p>
+
+                <p className='text-[#8892b0] py-4 max-w-[800px] text-xl my-2 leading-3'>
+                  <div>{projects['Quakes'].tools}</div>                  
+                </p>
+
+                <div className="h-4" />
+
+                <div className="flex flex-row ... justify-end">
+                    <a href={projects['Quakes'].link} target="_blank" rel="noopener noreferrer" 
+                      className="text-xl inline-block py-1 px-4 text-white font-semibold rounded border-2 border-white-500 hover:bg-gray-500 transition duration-300"
+                    >
+                      {'Project'}
+                    </a>
+
+                    <div className="w-4" />
+
+
+                    <a href={projects['Quakes'].git} target="_blank" rel="noopener noreferrer" 
+                      className="text-xl inline-block py-1 px-4 text-white font-semibold rounded border-2 border-white-500 hover:bg-gray-500 transition duration-300"
+                    >
+                      {'Source Code'}
+                    </a>
+          
+                </div>
+
+
+
+              </div>
+
+              <div>
+              <ClickableImage imageUrl={projects['Quakes'].image} linkUrl={projects['Quakes'].link}/>
+              </div>
+            </div>
+
+          </div>
+
+          <p className="my-11"></p>
+          <p className="my-11"></p>
   
   
         
