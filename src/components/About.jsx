@@ -2,8 +2,7 @@ import React from 'react';
 
 
 const HiddenExperienceList = [
-  'Collaborated with backend and UI-UX teams to build responsive frontends for Android and iOS devices',
-  'Designed and integrated a proximity chat feature that uses GPS to group users based on geographic location',
+  'Helped launch a profitable startup with a community of 200+ monthly users, utilizing cross-platform tools to design, implement, and iterate upon full-stack app features for both Android and iOS platforms',
   'Responsible for integrating support for institutional logins, implementing multi-factor authentication and incorporating privacy-by-design principles to ensure compliance with GDPR privacy standards',
   'Refactored 10,000+ lines of CSS code, improving codebase consistency and maintainability for developers',
   'Created CI/CD pipelines to automate the build, testing, and deployment processes across multiple platforms',
