@@ -1,6 +1,5 @@
 import React from 'react';
-//import { data } from "../data/data.js";
-import aws from "../assets/aws.png";
+
 import BugTrackerImg from '../assets/BugTrackerImg.png';
 import SoundbytesImg from '../assets/SoundbytesImg.png';
 import Acoustic_Release_Image_3 from '../assets/Acoustic_Release_Image_3.png';

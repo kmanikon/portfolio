@@ -3,8 +3,8 @@ import React from 'react';
 
 const HiddenExperienceList = [
   'Helped launch a profitable startup with a community of 200+ monthly users, utilizing cross-platform tools to design, implement, and iterate upon full-stack app features for both Android and iOS platforms',
-  'Responsible for integrating support for institutional logins, implementing multi-factor authentication and incorporating privacy-by-design principles to ensure compliance with GDPR privacy standards',
-  'Refactored 10,000+ lines of CSS code, improving codebase consistency and maintainability for developers',
+  'Responsible for integrating support for institutional logins, implementing multi-factor authentication and incorporating privacy-by-design principles to ensure compliance with data protection requirements',
+  'Refactored a frontend codebase developed by separate teams, improving code maintainability & performance',
   'Created CI/CD pipelines to automate the build, testing, and deployment processes across multiple platforms',
   'Tools Used: React Native, Node.js, Jenkins, Tailwind CSS, Figma Wireframes, Git'
 ]
@@ -50,7 +50,7 @@ const About = () => {
               <p className="my-0 leading-3">Hidden</p>
               <p className='text-[#8892b0] py-4 max-w-[700px] text-xl my-0 leading-7'>
                 <div>Software Developer</div>
-                <div>Jan 2023 - Present</div>
+                <div>Jan 2023 - Sept 2023</div>
               </p>
 
             </div>
