@@ -11,12 +11,13 @@ const HiddenExperienceList = [
 
 const ISAExperienceList = [
   'Research initiative to explore uses of machine learning & present findings to students and research faculty',
-  'Developed an object detection model that helps farmers identify defective fruits in crop yields, leveraging OpenCV to improve model accuracy by automating the annotation process for over 30,000 images',
-  "Collaborated with two students to create an informed search algorithm that outperformed conventional methods in playing the New York Times 'Spelling Bee' game, demonstrating an 87% improvement rate"
+  'Created a mobile app that helps farmers identify defective fruit in crop yields, utilizing Java and TFLite to integrate ML models trained by compiling 85,000 images & leveraging OpenCV to automate image labeling',
+  "Collaborated with two students to develop an informed search algorithm that outperformed conventional methods in playing the New York Times 'Spelling Bee' game, demonstrating an 87% improvement over DFS"
 ]
 
 const AlongComesHopeExperienceList = [
-  'Contributed to frontend development projects for a web-based nonprofit, working closely with Senior developers to build React JS frontends for the organization’s main homepage and member services'
+  'Contributed to frontend development projects at a web-based nonprofit, working closely with Senior developers to build React JS frontends for the organization’s main homepage and member services',
+  'Implemented responsive design principles to ensure a consistent website experience for desktop and mobile'
 ]
 
 
@@ -105,6 +106,7 @@ const About = () => {
             </div>
             <div>
               <ExperienceBullet bullet={AlongComesHopeExperienceList[0]}/>
+              <ExperienceBullet bullet={AlongComesHopeExperienceList[1]}/>
             </div>
           </div>
 
