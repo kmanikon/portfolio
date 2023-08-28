@@ -10,14 +10,14 @@ const HiddenExperienceList = [
 ]
 
 const ISAExperienceList = [
-  'Research initiative to explore uses of machine learning & present findings to students and research faculty',
   'Created a mobile app that helps farmers identify defective fruit in crop yields, utilizing Java and TFLite to integrate ML models trained by compiling 85,000 images & leveraging OpenCV to automate image labeling',
-  "Collaborated with two students to develop an informed search algorithm that outperformed conventional methods in playing the New York Times 'Spelling Bee' game, demonstrating an 87% improvement over DFS"
+  "Collaborated with two students to develop an informed search algorithm that outperformed conventional methods in playing the New York Times 'Spelling Bee' game, demonstrating an 87% improvement over DFS",
+  "Tools Used: Java, Python, OpenCV, PyTorch, TFLite, Jupyter Notebook, Git"
 ]
 
 const AlongComesHopeExperienceList = [
-  'Contributed to frontend development projects at a web-based nonprofit, working closely with Senior developers to build React JS frontends for the organization’s main homepage and member services',
-  'Implemented responsive design principles to ensure a consistent website experience for desktop and mobile'
+  'Developed the frontend for a Software as a Service platform, integrating third party APIs, implementing responsive design, and collaborating with backend developers to integrate business logic into the application',
+  'Tools Used: React JS, JavaScript, HTML / CSS, Git'
 ]
 
 
