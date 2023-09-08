@@ -62,6 +62,11 @@ const About = () => {
               <ExperienceBullet bullet={HiddenExperienceList[3]}/>
               <ExperienceBullet bullet={HiddenExperienceList[4]}/>
               <ExperienceBullet bullet={HiddenExperienceList[5]}/>
+              
+              <p>{'Feel free to visit our website at '}
+              <a href="https://hidntravel.com/" target="_blank" rel="noopener noreferrer"><b>https://hidntravel.com/</b></a>
+              </p>
+              <p className='py-2'></p>
             </div>
           </div>
 
