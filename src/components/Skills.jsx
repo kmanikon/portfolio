@@ -21,8 +21,8 @@ const Skills = () => {
 
       const ItemList = () => {
         const languages = ['Java', 'Python', 'C#', 'JavaScript', 'SQL', 'C', 'C++', 'HTML/CSS'];
-        const frameworks = ['React', 'Node.js', 'ASP.NET', 'Express'];
-        const otherTools = ['Docker', 'Postman', 'Apache Spark', 'Azure Cloud', 'Git'];
+        const frameworks = ['React', 'Next.js', 'Node.js', 'ASP.NET', 'Express'];
+        const otherTools = ['Docker', 'Postman', 'AWS', 'Azure Cloud', 'Git'];
       
         return (
           <div className="container">

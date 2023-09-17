@@ -1,12 +1,17 @@
 import React from 'react';
 
+const EDUrainExperienceList = [
+  'Responsible for end-to-end development of a messaging feature as the primary developer. Responsibilities include creating and maintaining design documentation, designing a responsive UI, writing unit tests, developing the frontend, and integrating a Firebase backend into an existing microservice architecture',
+  'Assisted Senior developers in fixing bugs and resolving production issues in weekly coding sessions',
+  'Tools Used: React JS, Next.js, GraphQL, Firebase, AWS, TypeScript, JavaScript, Tailwind CSS, Git'
+]
 
 const HiddenExperienceList = [
-  'Helped launch a profitable startup with a community of 200+ monthly users, utilizing cross-platform tools to design, implement, and iterate upon full-stack app features for both Android and iOS platforms',
-  'Responsible for integrating support for institutional logins, implementing multi-factor authentication and incorporating privacy-by-design principles to ensure compliance with data protection requirements',
-  'Refactored a frontend codebase developed by separate teams, improving code maintainability & performance',
+  'Helped develop a scalable travel platform that matches users with local businesses, employing cross-platform tools to design, implement, and refine full-stack application features for both Android and iOS environments',
+  'Responsible for integrating single sign-on authentication support, implementing multi-factor authentication, and incorporating privacy-by-design principles to ensure compliance with data protection requirements',
+  'Achieved high test coverage on the frontend, streamlining development and improving code maintainability',
   'Created CI/CD pipelines to automate the build, testing, and deployment processes across multiple platforms',
-  'Tools Used: React Native, Node.js, Jenkins, Tailwind CSS, Figma Wireframes, Git'
+  'Tools Used: React Native, Node.js, Jenkins, JavaScript, React Native Testing Library, Figma Wireframes, Git'
 ]
 
 const ISAExperienceList = [
@@ -46,6 +51,32 @@ const About = () => {
 
         <div>
 
+
+
+
+        {/*
+        <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+            <div className='sm:text-right text-4xl font-bold'>
+              <p className="my-0 leading-3">EDUrain</p>
+              <p className='text-[#8892b0] py-4 max-w-[700px] text-xl my-0 leading-7'>
+                <div>Software Engineer Intern</div>
+                <div>Sept 2023 - Present</div>
+              </p>
+
+            </div>
+            <div>
+              <ExperienceBullet bullet={"(ongoing)"}/>
+              
+            </div>
+          </div>
+        
+        <p className="my-7"></p>
+        */}
+
+
+
+        
+
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
             <div className='sm:text-right text-4xl font-bold'>
               <p className="my-0 leading-3">Hidden</p>
@@ -63,10 +94,7 @@ const About = () => {
               <ExperienceBullet bullet={HiddenExperienceList[4]}/>
               <ExperienceBullet bullet={HiddenExperienceList[5]}/>
               
-              <p>{'Feel free to visit our website at '}
-              <a href="https://hidntravel.com/" target="_blank" rel="noopener noreferrer"><b>https://hidntravel.com/</b></a>
-              </p>
-              <p className='py-2'></p>
+
             </div>
           </div>
 
@@ -114,6 +142,9 @@ const About = () => {
               <ExperienceBullet bullet={AlongComesHopeExperienceList[1]}/>
             </div>
           </div>
+
+
+          
 
         </div>
 
