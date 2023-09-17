@@ -20,7 +20,7 @@ const Skills = () => {
       
 
       const ItemList = () => {
-        const languages = ['Java', 'Python', 'C#', 'JavaScript', 'SQL', 'C', 'C++', 'HTML/CSS'];
+        const languages = ['Java', 'Python', 'C#', 'JavaScript', 'TypeScript', 'SQL', 'C', 'C++', 'HTML/CSS'];
         const frameworks = ['React', 'Next.js', 'Node.js', 'ASP.NET', 'Express'];
         const otherTools = ['Docker', 'Postman', 'AWS', 'Azure Cloud', 'Git'];
       
