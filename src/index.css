@@ -97,3 +97,17 @@
     background-size: cover;
     background-position: center;
   }
+
+  .vertical-timeline {
+    width: 95%;
+    max-width: 800px !important;
+    margin: 0 auto;
+    position: relative;
+    padding: 2em 0;
+  }
+
+  @media only screen and (min-width: 1170px) {
+    .vertical-timeline {
+      max-width: 1170px !important;
+    }
+  }
