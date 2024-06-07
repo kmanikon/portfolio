@@ -102,7 +102,8 @@ const ExperienceCard = ({ experience }) => {
     <VerticalTimelineElement
       contentStyle={{
         background: "#0a192f",
-        color: "#fff",
+        //borderRadius: 0
+        //color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
@@ -126,6 +127,7 @@ const ExperienceCard = ({ experience }) => {
           {experience.company_name}
         </p>
       </div>
+      
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
@@ -159,10 +161,10 @@ const Experience = () => {
       </motion.div>
       max-w-[95vw] 
       */}
-     <div className='mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div>
-            <p className='mx-auto p-4 text-4xl font-bold inline border-b-4 border-pink-600'>Experience</p>
-        </div>
+     <div className='mx-auto flex flex-col justify-center w-full'>
+
+      <p className='mx-auto text-4xl font-bold flex justify-center'>Experience</p>
+
     
 
         
