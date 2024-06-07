@@ -1,10 +1,78 @@
 import React from 'react';
 
+import github from "../assets/github.png";
 import BugTrackerImg from '../assets/BugTrackerImg.png';
 import SoundbytesImg from '../assets/SoundbytesImg.png';
 import Acoustic_Release_Image_3 from '../assets/Acoustic_Release_Image_3.png';
 import Quakes_Page from '../assets/Quakes_Page.png';
 
+
+const projects = [
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Quakes_Page,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Job IT",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: BugTrackerImg,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: BugTrackerImg,
+    source_code_link: "https://github.com/",
+  },
+];
+/*
 const projects = {
  Bugtracker: {
     title: 'Bug Tracker',
@@ -40,6 +108,7 @@ const projects = {
   }
   
 };
+*/
 
 
 const Work = () => {
@@ -47,6 +116,60 @@ const Work = () => {
     // projects file
     //const project = data;
     //setProject(data);
+
+    const ProjectCard = ({
+      index,
+      name,
+      description,
+      tags,
+      image,
+      source_code_link,
+    }) => {
+      return (
+        <div
+            className='bg-tertiary bg-[#00000061] p-5 rounded-2xl sm:w-[360px] w-full' style={{border: '1px solid white'}}
+          >
+            <div className='relative w-full h-[230px]'>
+              <img
+                src={image}
+                alt='project_image'
+                className='w-full h-full object-cover rounded-2xl'
+                style={{zIndex: -1}}
+              />
+    
+              <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+                <div
+                  onClick={() => window.open(source_code_link, "_blank")}
+                  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-[black]'
+                >
+                  <img
+                    src={github}
+                    alt='source code'
+                    className='w-1/2 h-1/2 object-contain'
+                    style={{zIndex: 30}}
+                  />
+                </div>
+              </div>
+            </div>
+    
+            <div className='mt-5'>
+              <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+              <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+            </div>
+    
+            <div className='mt-4 flex flex-wrap gap-2'>
+              {tags.map((tag) => (
+                <p
+                  key={`${name}-${tag.name}`}
+                  className={`text-[14px] ${tag.color}`}
+                >
+                  #{tag.name}
+                </p>
+              ))}
+            </div>
+            </div>
+      );
+    };
 
     const ClickableImage = ({ imageUrl, onClick, linkUrl }) => {
       return (
@@ -88,14 +211,38 @@ const Work = () => {
 
     
 
+    const ProjectList = () => {
+
+      return (
+        <div className="min-w-[100%] ontainer flex flex-wrap gap-4 justify-center">
+            <ProjectCard key={`project-${1}`} index={1} {...projects[0]} />
+            <ProjectCard key={`project-${2}`} index={2} {...projects[1]} />
+            <ProjectCard key={`project-${3}`} index={3} {...projects[2]} />
+        </div>
+      );
+    };
   
   return (
     <div>
-    
 
+      <div name='work' className='pb-40 w-full h-auto bg-[#0a192f] text-gray-300 py-12'>
+        {/* Container */}
+        <div className='pt-10 max-w-[100%] mx-auto p-4 flex flex-col justify-center'>
+          <div className="text-center">
+            <p className='text-4xl font-bold'>Projects</p>
+            <p className='py-4'></p>
+          </div>
+          
+          <div>
+            <ProjectList />
+          </div>
+        </div>
+      </div>
+    
+      {/*}
       <div>
       <div name='work' className='w-full bg-[#0a192f] text-gray-300'>
-        <div className='pt-20 max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='pt-20 '>
             <div>
                 <p className='text-4xl font-bold  flex justify-center'>Projects</p>
                 <p className='py-4'></p>
@@ -104,7 +251,16 @@ const Work = () => {
   
           <div>
   
-          <div className='pt-10 max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+          <div >
+
+          <div className="min-w-[100%] ontainer flex flex-wrap gap-4 justify-center">
+            
+
+              <ProjectCard key={`project-${1}`} index={1} {...projects[0]} />
+              <ProjectCard key={`project-${2}`} index={2} {...projects[1]} />
+              <ProjectCard key={`project-${3}`} index={3} {...projects[2]} />
+          </div>
+              {/*
               <div className='sm:text-right text-4xl font-bold my-0'>
                 <p className="my-0 leading-7">{projects['Bugtracker'].title}</p>
 
@@ -193,7 +349,9 @@ const Work = () => {
               </div>
 
               <div>
+                
               <ClickableImage imageUrl={projects['Soundbytes'].image} linkUrl={projects['Soundbytes'].link}/>
+              
               </div>
             </div>
 
@@ -307,12 +465,16 @@ const Work = () => {
   
   
   
-          
+            
+            </div>
+            </div>
   
         </div>
       </div>
+      
   
       </div>
+      */}
       </div>
   );
 };
