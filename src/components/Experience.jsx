@@ -13,62 +13,81 @@ import { SectionWrapper } from "./SectionWrapper";
 import { textVariant } from "../utils/motion.jsx";
 
 import EDUrain from '../assets/companyIcons/EDUrain.jpg';
+import Hidden from '../assets/companyIcons/Hidden.jpeg';
+import CalPoly from '../assets/companyIcons/CalPoly.jpg';
+import AlongComesHope from '../assets/companyIcons/AlongComesHope.jpeg';
 
 const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Software Engineer",
+      company_name: "EDUrain",
       icon: EDUrain,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      iconBg: "#fff",
+      date: "December 2023 - June 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Responsible for full-stack development on a live web service, delivering end-to-end implementation of additional features and iterations. Responsibilities include creating design documentation, designing a responsive UI, developing the frontend, and integrating backend services into a microservice architecture",
+        "Architected, designed, and implemented a service for automating rental background checks as the primary developer. This feature became a paid service, contributing 6% of the company’s revenue in May 2024",
+        "Led efforts to streamline mobile responsiveness across the site, significantly improving the mobile user experience. This initiative directly led to a 43% growth in mobile traffic between Dec 2023 and June 2024",
+        "Helped conduct technical interviews to assess candidate skills and was responsible for delivering regular tech updates during investor meetings, ensuring alignment between technical progress and business objectives",
+        "Tools Used: React JS, Next.js, Node.js, Express.js, Firebase, AWS, TypeScript, JavaScript, Tailwind CSS, Git"
+
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Software Engineer Intern",
+      company_name: "EDUrain",
       icon: EDUrain,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      iconBg: "#fff",
+      date: "September 2023 - December 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed a microservice for monitoring user payments and processing rental data for external clients. Worked with clients to meet data format specifications and ensure smooth integration with existing services",
+        "Implemented a real-time messaging feature, facilitating in-app communication and boosting user engagement. Utilized a websocket based approach to sync user state and provide users with a real-time chat experience",
+        "Configured a non-prod testing environment in AWS, streamlining deployment and facilitating test automation",
+        "Tools Used: React JS, Next.js, Node.js, Express.js, Firebase, AWS, TypeScript, JavaScript, Tailwind CSS, Git"
+
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: EDUrain,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Software Developer Intern",
+      company_name: "Hidden",
+      icon: Hidden,
+      iconBg: "#fff",
+      date: "January 2023 - September 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Helped develop a scalable travel platform that matches users with local businesses, employing cross-platform tools to design, implement, and refine full-stack application features for both Android and iOS environments",
+        "Responsible for integrating single sign-on authentication support, implementing multi-factor authentication, and incorporating privacy-by-design principles to ensure compliance with data protection requirements",
+        "Tools Used: React Native, Node.js, JavaScript, React Native Testing Library, Figma Wireframes, Git"
+
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: EDUrain,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Research Assistant",
+      company_name: "Cal Poly Corporation",
+      icon: CalPoly,
+      iconBg: "#fff",
+      date: "October 2022 - December 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed a camera system that helps farmers at a local vineyard identify defective grapes using ML and computer vision. Created scripts to automate development bottlenecks to facilitate implementation of an MVP",
+        "Tools Used: Java, Python, OpenCV, PyTorch, TFLite, Jupyter Notebook, Git"
+
+      ],
+    },
+    {
+      title: "Software Developer Intern",
+      company_name: "Along Comes Hope",
+      icon: AlongComesHope,
+      //iconBg: "#E6DEDD",
+      iconBg: "#fff",
+      date: "June 2022 - August 2022",
+      points: [
+        "Developed the frontend for a Software as a Service platform, integrating third party APIs, implementing responsive design, and collaborating with backend developers to incorporate RESTful services into the app",
+        "Tools Used: React JS, JavaScript, HTML / CSS, Git"
+
       ],
     },
   ];
   
+  /*
   const testimonials = [
     {
       testimonial:
@@ -95,6 +114,7 @@ const experiences = [
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
+  */
   
 
 const ExperienceCard = ({ experience }) => {
@@ -113,7 +133,8 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-[100%] h-[100%] object-contain'
+            style={{clipPath: 'circle()'}}
           />
         </div>
       }
@@ -168,7 +189,7 @@ const Experience = () => {
     
 
         
-      <div className='mt-20 flex flex-col'>
+      <div className='mt-14 flex flex-col'>
         <VerticalTimeline layout={'2-columns'}>
           {experiences.map((experience, index) => (
             <ExperienceCard
