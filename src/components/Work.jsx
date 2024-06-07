@@ -3,6 +3,7 @@ import React from 'react';
 import github from "../assets/github.png";
 import BugTrackerImg from '../assets/BugTrackerImg.png';
 import SoundbytesImg from '../assets/SoundbytesImg.png';
+import PasswordBuddyImg from '../assets/PasswordBuddyImg.png';
 import Acoustic_Release_Image_3 from '../assets/Acoustic_Release_Image_3.png';
 import Quakes_Page from '../assets/Quakes_Page.png';
 
@@ -14,20 +15,20 @@ const projects = [
       "Project management tool tailored for developer teams. Features include a bulletin board, interactive user metrics, user management, real-time notifications, and a rollback feature that allows admins to undo previous changes.",
     tags: [
       {
-        name: "C#",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
-      {
         name: "ASP.NET",
         color: "pink-text-gradient",
       },
       {
         name: "React",
         color: "pink-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
       },
       {
         name: "SQLite",
@@ -46,46 +47,58 @@ const projects = [
   {
     name: "Password Buddy",
     description:
-      "Web-based password manager utilizing AES encryption to secure credentials and session tokens to prevent unauthorized access. Supports domain parsing, visibility options, and clipboard integration for ease of access.",
-    tags: [
+      "Web-based password manager that stores passwords in the cloud. Utilizes AES encryption to secure credentials and session tokens to prevent unauthorized access. Supports visibility options for ease of access.",
+      tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Docker",
         color: "pink-text-gradient",
       },
     ],
-    image: SoundbytesImg,
+    image: PasswordBuddyImg,
     source_code_link: "https://github.com/kmanikon/Password-Manager",
     linkUrl: "https://password-buddy.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Quake Search",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      'Website for visualizing earthquake data collected by the US Geological Survey.',
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: BugTrackerImg,
-    source_code_link: "https://github.com/",
-    linkUrl: "https://github.com/",
+    image: Quakes_Page,
+    source_code_link: 'https://github.com/kmanikon/Quakes_Updated',
+    linkUrl: 'https://quakes-peach.vercel.app/home',
   },
 ];
 /*
