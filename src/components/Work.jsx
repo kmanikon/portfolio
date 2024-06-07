@@ -41,7 +41,7 @@ const projects = [
       
     ],
     image: BugTrackerImg,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/kmanikon/Bug-Tracker",
     linkUrl: "https://bug-tracker-km.vercel.app/login",
   },
   {
