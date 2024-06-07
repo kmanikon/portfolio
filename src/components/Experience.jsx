@@ -170,7 +170,7 @@ const Experience = () => {
 
   return (
     <>
-    <div name='about' className=' w-full bg-[#0a192f] text-gray-300'>
+    <div name='about' className=' pb-40 w-full bg-[#0a192f] text-gray-300'>
         {/*
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>

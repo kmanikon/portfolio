@@ -95,16 +95,16 @@ const Work = () => {
 
       <div>
       <div name='work' className='w-full bg-[#0a192f] text-gray-300'>
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='pt-20 max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
-                <p className='text-4xl font-bold inline border-b-4 border-pink-600 '>Projects</p>
+                <p className='text-4xl font-bold  flex justify-center'>Projects</p>
                 <p className='py-4'></p>
             </div>
           
   
           <div>
   
-          <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+          <div className='pt-10 max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
               <div className='sm:text-right text-4xl font-bold my-0'>
                 <p className="my-0 leading-7">{projects['Bugtracker'].title}</p>
 
