@@ -9,31 +9,44 @@ import Quakes_Page from '../assets/Quakes_Page.png';
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Bug Tracker",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Project management tool tailored for developer teams. Features include a bulletin board, interactive user metrics, user management, real-time notifications, and a rollback feature that allows admins to undo previous changes.",
     tags: [
       {
-        name: "react",
+        name: "C#",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "ASP.NET",
         color: "pink-text-gradient",
       },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SQLite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "pink-text-gradient",
+      },
+      
     ],
-    image: Quakes_Page,
+    image: BugTrackerImg,
     source_code_link: "https://github.com/",
-    linkUrl: "https://github.com/",
+    linkUrl: "https://bug-tracker-km.vercel.app/login",
   },
   {
-    name: "Job IT",
+    name: "Password Buddy",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web-based password manager utilizing AES encryption to secure credentials and session tokens to prevent unauthorized access. Supports domain parsing, visibility options, and clipboard integration for ease of access.",
     tags: [
       {
         name: "react",
@@ -48,9 +61,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: BugTrackerImg,
-    source_code_link: "https://github.com/",
-    linkUrl: "https://github.com/",
+    image: SoundbytesImg,
+    source_code_link: "https://github.com/kmanikon/Password-Manager",
+    linkUrl: "https://password-buddy.vercel.app/",
   },
   {
     name: "Trip Guide",
@@ -132,9 +145,7 @@ const Work = () => {
       return (
         <div
             className='bg-tertiary bg-[#00000061] p-5 rounded-2xl sm:w-[360px] w-full' style={{border: '1px solid white'}}
-          >
-            {/*<ClickableImage imageUrl={image} onClick={() => window.open(source_code_link, "_blank")} linkUrl={linkUrl}/>*/}
-            
+          >            
             <div className='relative w-full h-[230px]'>
 
                 <a href={linkUrl} target="_blank" rel="noopener noreferrer">
@@ -146,7 +157,6 @@ const Work = () => {
                 />
                 <div
                   className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out font-bold"
-                  //onClick={() => window.open(source_code_link, "_blank")}
                 >
                   Go To Project
                 </div>
@@ -180,53 +190,13 @@ const Work = () => {
                   key={`${name}-${tag.name}`}
                   className={`text-[14px] ${tag.color}`}
                 >
-                  #{tag.name}
+                  {tag.name}
                 </p>
               ))}
             </div>
             </div>
       );
     };
-
-    const ClickableImage = ({ imageUrl, onClick, linkUrl }) => {
-      return (
-        <div 
-        className="relative h-[230px]"
-        >
-          {linkUrl !== '' ?
-            <a href={linkUrl} target="_blank" rel="noopener noreferrer">
-            <img
-              src={imageUrl}
-              alt="Clickable Image"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-90 cursor-pointer h-[230px]"
-            />
-            <div
-              className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out font-bold"
-              onClick={onClick}
-            >
-              Go To Project
-            </div>
-            </a>
-          :
-            <div>
-            <img
-              src={imageUrl}
-              alt="Clickable Image"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-90 cursor-pointer"
-            />
-            <div
-              className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out font-bold"
-              onClick={onClick}
-            >
-            
-            </div>
-            </div>
-          }
-        </div>
-      );
-    };
-
-    
 
     const ProjectList = () => {
 
