@@ -170,7 +170,7 @@ const Experience = () => {
 
   return (
     <>
-    <div name='about' className='pb-40 w-full bg-[#0a192f] text-gray-300'>
+    <div name='about' className=' w-full bg-[#0a192f] text-gray-300'>
         {/*
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
@@ -184,7 +184,7 @@ const Experience = () => {
       */}
      <div className='mx-auto flex flex-col justify-center w-full'>
 
-      <p className='mx-auto text-4xl font-bold flex justify-center'>Experience</p>
+      <p className='pt-20 mx-auto text-4xl font-bold flex justify-center'>Experience</p>
 
     
 
