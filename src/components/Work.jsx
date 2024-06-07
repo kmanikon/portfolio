@@ -28,6 +28,7 @@ const projects = [
     ],
     image: Quakes_Page,
     source_code_link: "https://github.com/",
+    linkUrl: "https://github.com/",
   },
   {
     name: "Job IT",
@@ -49,6 +50,7 @@ const projects = [
     ],
     image: BugTrackerImg,
     source_code_link: "https://github.com/",
+    linkUrl: "https://github.com/",
   },
   {
     name: "Trip Guide",
@@ -70,6 +72,7 @@ const projects = [
     ],
     image: BugTrackerImg,
     source_code_link: "https://github.com/",
+    linkUrl: "https://github.com/",
   },
 ];
 /*
@@ -124,20 +127,33 @@ const Work = () => {
       tags,
       image,
       source_code_link,
+      linkUrl
     }) => {
       return (
         <div
             className='bg-tertiary bg-[#00000061] p-5 rounded-2xl sm:w-[360px] w-full' style={{border: '1px solid white'}}
           >
+            {/*<ClickableImage imageUrl={image} onClick={() => window.open(source_code_link, "_blank")} linkUrl={linkUrl}/>*/}
+            
             <div className='relative w-full h-[230px]'>
-              <img
-                src={image}
-                alt='project_image'
-                className='w-full h-full object-cover rounded-2xl'
-                style={{zIndex: -1}}
-              />
+
+                <a href={linkUrl} target="_blank" rel="noopener noreferrer">
+                 <img
+                  src={image}
+                  alt='project_image'
+                  className='w-full h-full object-cover rounded-2xl'
+                  style={{zIndex: -1}}
+                />
+                <div
+                  className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out font-bold"
+                  //onClick={() => window.open(source_code_link, "_blank")}
+                >
+                  Go To Project
+                </div>
+                </a>
     
-              <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+              
+              <div className='absolute right-0 top-0 flex justify-end m-3 card-img_hover w-10 h-10 '>
                 <div
                   onClick={() => window.open(source_code_link, "_blank")}
                   className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-[black]'
@@ -150,6 +166,7 @@ const Work = () => {
                   />
                 </div>
               </div>
+              
             </div>
     
             <div className='mt-5'>
@@ -174,14 +191,14 @@ const Work = () => {
     const ClickableImage = ({ imageUrl, onClick, linkUrl }) => {
       return (
         <div 
-        className="relative w-200 h-100 border-4 border-blue-500"
+        className="relative h-[230px]"
         >
           {linkUrl !== '' ?
             <a href={linkUrl} target="_blank" rel="noopener noreferrer">
             <img
               src={imageUrl}
               alt="Clickable Image"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-90 cursor-pointer"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-90 cursor-pointer h-[230px]"
             />
             <div
               className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out font-bold"
