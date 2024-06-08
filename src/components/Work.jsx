@@ -47,7 +47,7 @@ const projects = [
   {
     name: "Password Buddy",
     description:
-      "Web-based password manager that stores passwords in the cloud. Utilizes AES encryption to secure credentials and session tokens to prevent unauthorized access. Supports visibility options for ease of access.",
+      "Web-based password manager that stores passwords in the cloud. Utilizes AES encryption and session tokens to secure credentials and prevent unauthorized access. Supports visibility options for ease of use.",
       tags: [
       {
         name: "React",
