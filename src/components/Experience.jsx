@@ -26,9 +26,11 @@ const experiences = [
       date: "December 2023 - Present",
       points: [
         "Responsible for full-stack development on a live web service, delivering end-to-end implementation of additional features and iterations. Responsibilities include creating design documentation, designing a responsive UI, developing the frontend, and integrating backend services into a microservice architecture",
+        /*
         "Architected, designed, and implemented a service for automating rental background checks as the primary developer. This feature became a paid service, contributing 6% of the company’s revenue in May 2024",
         "Led efforts to streamline mobile responsiveness across the site, significantly improving the mobile user experience. This initiative directly led to a 43% growth in mobile traffic between Dec 2023 and June 2024",
         "Helped conduct technical interviews to assess candidate skills and was responsible for delivering regular tech updates during investor meetings, ensuring alignment between technical progress and business objectives",
+        */
         "Tools Used: React JS, Next.js, Node.js, Express.js, Firebase, AWS, TypeScript, JavaScript, Tailwind CSS, Git"
 
       ],
