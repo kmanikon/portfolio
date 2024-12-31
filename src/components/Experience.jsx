@@ -28,7 +28,7 @@ const experiences = [
       points: [  
         "Led UI-UX initiatives on my team by becoming their primary UI designer and collaborating closely with stakeholders to develop designs for the project's MVP. My work helped secure client approval in August, ensuring alignment with the Q4 delivery timeline",      
         "Proposed and demonstrated a virtualized rendering strategy to improve application performance at production data volumes, allowing leadership to adopt the solution for broader use, meet scalability goals, and address client needs",
-        "Built an automated notification system for real-time summary reports on code contributions, streamling the code review process by eliminated knowledge silos and improving team productivity",
+        "Built an automated notification system for real-time summary reports on code contributions, streamlining the code review process by eliminated knowledge silos and improving team productivity",
         "Oversaw end-to-end integration with AT&T’s global logon through OIDC authentication, serving as a critical milestone for the project by fulfilling security criteria to begin user testing",
         "Proposed and led implementation of a dynamic routing solution for preserving client-side state between browser sessions, reducing database workloads and leading to a 6% reduction in the project’s projected cloud costs",
         "Tools Used: React JS, Node.js, Express.js, Azure Cloud, TypeScript, Figma, Git"
