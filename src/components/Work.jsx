@@ -1,6 +1,7 @@
 import React from 'react';
 
 import github from "../assets/github.png";
+import BlockscapeImg from '../assets/BlockscapeImg.png'
 import BugTrackerImg from '../assets/BugTrackerImg.png';
 import SoundbytesImg from '../assets/SoundbytesImg.png';
 import PasswordBuddyImg from '../assets/PasswordBuddyImg.png';
@@ -9,6 +10,36 @@ import Quakes_Page from '../assets/Quakes_Page.png';
 
 
 const projects = [
+  {
+    name: "Blockscape",
+    description:
+      "Browser-based 3D sandbox enviorment built in React and Three.js. Utilizes a Supabase serverless client and PostgresSQL database to store user projects. Features custom camera controls for mobile accessibility.",
+    tags: [
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Three.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PostgresSQL",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: BlockscapeImg,
+    source_code_link: "https://github.com/kmanikon/Blockscape",
+    linkUrl: "https://km-blockscape.vercel.app/",
+  },
   {
     name: "Bug Tracker",
     description:
@@ -184,7 +215,7 @@ const Work = () => {
                   <img
                     src={github}
                     alt='source code'
-                    className='w-1/2 h-1/2 object-contain'
+                    className='w-5/6 h-5/6 object-contain'
                     style={{zIndex: 30}}
                   />
                 </div>
@@ -218,6 +249,7 @@ const Work = () => {
             <ProjectCard key={`project-${1}`} index={1} {...projects[0]} />
             <ProjectCard key={`project-${2}`} index={2} {...projects[1]} />
             <ProjectCard key={`project-${3}`} index={3} {...projects[2]} />
+            <ProjectCard key={`project-${4}`} index={4} {...projects[3]} />
         </div>
       );
     };

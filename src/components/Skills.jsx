@@ -20,9 +20,9 @@ const Skills = () => {
       
 
       const ItemList = () => {
-        const languages = ['Java', 'Python', 'C#', 'JavaScript', 'TypeScript', 'SQL', 'C', 'C++', 'HTML/CSS'];
+        const languages = ['Java', 'Python', 'C#', 'JavaScript', 'TypeScript', 'SQL', 'HTML/CSS'];
         const frameworks = ['React', 'Next.js', 'Node.js', 'ASP.NET', 'Express'];
-        const otherTools = ['Docker', 'Postman', 'AWS', 'Azure Cloud', 'Git'];
+        const otherTools = ['Docker', 'Postman', 'Azure Cloud', 'AWS', 'Figma', 'MS Power Automate', 'Git'];
       
         return (
           <div className="min-w-[100%] ontainer flex flex-wrap gap-4 justify-center">

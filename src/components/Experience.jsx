@@ -12,6 +12,7 @@ import { styles } from "../styles/ExperienceStyles";
 import { SectionWrapper } from "./SectionWrapper";
 import { textVariant } from "../utils/motion.jsx";
 
+import ATT from '../assets/companyIcons/ATT.png';
 import EDUrain from '../assets/companyIcons/EDUrain.jpg';
 import Hidden from '../assets/companyIcons/Hidden.jpeg';
 import CalPoly from '../assets/companyIcons/CalPoly.jpg';
@@ -20,33 +21,32 @@ import AlongComesHope from '../assets/companyIcons/AlongComesHope.jpeg';
 const experiences = [
     {
       title: "Software Engineer",
-      company_name: "EDUrain",
-      icon: EDUrain,
+      company_name: "AT&T Services",
+      icon: ATT,
       iconBg: "#fff",
-      date: "December 2023 - Present",
-      points: [
-        "Responsible for full-stack development on a live web service, delivering end-to-end implementation of additional features and iterations. Responsibilities include creating design documentation, designing a responsive UI, developing the frontend, and integrating backend services into a microservice architecture",
-        /*
-        "Architected, designed, and implemented a service for automating rental background checks as the primary developer. This feature became a paid service, contributing 6% of the company’s revenue in May 2024",
-        "Led efforts to streamline mobile responsiveness across the site, significantly improving the mobile user experience. This initiative directly led to a 43% growth in mobile traffic between Dec 2023 and June 2024",
-        "Helped conduct technical interviews to assess candidate skills and was responsible for delivering regular tech updates during investor meetings, ensuring alignment between technical progress and business objectives",
-        */
-        "Tools Used: React JS, Next.js, Node.js, Express.js, Firebase, AWS, TypeScript, JavaScript, Tailwind CSS, Git"
-
+      date: "July 2024 - Present",
+      points: [  
+        "Led UI-UX initiatives on my team by becoming their primary UI designer and collaborating closely with stakeholders to develop designs for the project's MVP. My work helped secure client approval in August, ensuring alignment with the Q4 delivery timeline",      
+        "Proposed and demonstrated a virtualized rendering strategy to improve application performance at production data volumes, allowing leadership to adopt the solution for broader use, meet scalability goals, and address client needs",
+        "Built an automated notification system for real-time summary reports on code contributions, streamling the code review process by eliminated knowledge silos and improving team productivity",
+        "Oversaw end-to-end integration with AT&T’s global logon through OIDC authentication, serving as a critical milestone for the project by fulfilling security criteria to begin user testing",
+        "Proposed and led implementation of a dynamic routing solution for preserving client-side state between browser sessions, reducing database workloads and leading to a 6% reduction in the project’s projected cloud costs",
+        "Tools Used: React JS, Node.js, Express.js, Azure Cloud, TypeScript, Figma, Git"
       ],
     },
     {
-      title: "Software Engineer Intern",
+      title: "Software Engineer",
       company_name: "EDUrain",
       icon: EDUrain,
       iconBg: "#fff",
-      date: "September 2023 - December 2023",
-      points: [
+      date: "September 2023 - July 2024",
+      points: [  
+        "Joined a Series-A startup as an early engineer, becoming the second full-time hire after the CTO. Led full-stack development for a live web service, delivering end-to-end implementation of core site features. Key responsibilities included creating design documentation, designing a responsive UI, developing the frontend, and integrating backend services within a microservice architecture.",      
+        "Led efforts to streamline mobile responsiveness across the site, significantly improving the mobile user experience. This initiative directly led to a 43% growth in mobile traffic between Dec 2023 and June 2024",
         "Developed a microservice for monitoring user payments and processing rental data for external clients. Worked with clients to meet data format specifications and ensure smooth integration with existing services",
-        "Implemented a real-time messaging feature, facilitating in-app communication and boosting user engagement. Utilized a websocket based approach to sync user state and provide users with a real-time chat experience",
-        "Configured a non-prod testing environment in AWS, streamlining deployment and facilitating test automation",
-        "Tools Used: React JS, Next.js, Node.js, Express.js, Firebase, AWS, TypeScript, JavaScript, Tailwind CSS, Git"
-
+        "Implemented a real-time messaging feature, facilitating in-app communication to boost user engagement. Utilized a websocket based approach to sync user state and provide users with a real-time chat experience",
+        "Responsible for delivering regular tech updates during stakeholder meetings, ensuring alignment between technical progress and business objectives",
+        "Tools Used: React JS, Next.js, Node.js, Express.js, Firebase, AWS, TypeScript, Git"
       ],
     },
     {
@@ -59,7 +59,6 @@ const experiences = [
         "Helped develop a scalable travel platform that matches users with local businesses, employing cross-platform tools to design, implement, and refine full-stack application features for both Android and iOS environments",
         "Responsible for integrating single sign-on authentication support, implementing multi-factor authentication, and incorporating privacy-by-design principles to ensure compliance with data protection requirements",
         "Tools Used: React Native, Node.js, JavaScript, React Native Testing Library, Figma Wireframes, Git"
-
       ],
     },
     {
@@ -69,7 +68,7 @@ const experiences = [
       iconBg: "#fff",
       date: "October 2022 - December 2023",
       points: [
-        "Developed a camera system that helps farmers at a local vineyard identify defective grapes using ML and computer vision. Created scripts to automate development bottlenecks to facilitate implementation of an MVP",
+        "Developed a camera system for identifying defective fruit varieties using ML and computer vision. Created scripts to automate development bottlenecks to facilitate implementation of an MVP",
         "Tools Used: Java, Python, OpenCV, PyTorch, TFLite, Jupyter Notebook, Git"
 
       ],
@@ -84,7 +83,6 @@ const experiences = [
       points: [
         "Developed the frontend for a Software as a Service platform, integrating third party APIs, implementing responsive design, and collaborating with backend developers to incorporate RESTful services into the app",
         "Tools Used: React JS, JavaScript, HTML / CSS, Git"
-
       ],
     },
   ];
