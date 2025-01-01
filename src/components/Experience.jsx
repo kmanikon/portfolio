@@ -26,7 +26,7 @@ const experiences = [
       iconBg: "#fff",
       date: "July 2024 - Present",
       points: [  
-        "Led UI-UX initiatives on my team by becoming their primary UI designer and collaborating closely with stakeholders to develop designs for the project's MVP. My work helped secure client approval in August, ensuring alignment with the Q4 delivery timeline",      
+        //"Led UI-UX initiatives on my team by becoming their primary UI designer and collaborating closely with stakeholders to develop designs for the project's MVP. My work helped secure client approval in August, ensuring alignment with the Q4 delivery timeline",      
         "Proposed and demonstrated a virtualized rendering strategy to improve application performance at production data volumes, allowing leadership to adopt the solution for broader use, meet scalability goals, and address client needs",
         "Built an automated notification system for real-time summary reports on code contributions, streamlining the code review process by eliminating knowledge silos and improving team productivity",
         "Oversaw end-to-end integration with AT&T’s global logon through OIDC authentication, serving as a critical milestone for the project by fulfilling security criteria to begin user testing",
