@@ -16,7 +16,7 @@ const Home = () => {
         </h2>
         
         <p className='text-[#8892b0] py-4 max-w-[700px]'>
-        Welcome to my portfolio site! I'm a lifelong learner and passionate developer dedicated to building innovative, user-centric software. Drawing from my experience in web and mobile development, I infuse creative problem solving into my coding journey and constantly seek new challenges to expand my skill set. Also, I'm a huge fan of Dungeons & Dragons.
+        Welcome to my portfolio site! I'm a lifelong learner dedicated to building innovative and user-centric software. Drawing from my experience in web and mobile development, I infuse creative problem solving into my coding journey and constantly seek new challenges to expand my skill set. Also, I'm a huge fan of Dungeons & Dragons.
         </p>
           
 
