@@ -27,9 +27,9 @@ const experiences = [
       date: "July 2024 - Present",
       points: [  
         //"Led UI-UX initiatives on my team by becoming their primary UI designer and collaborating closely with stakeholders to develop designs for the project's MVP. My work helped secure client approval in August, ensuring alignment with the Q4 delivery timeline",      
-        "Proposed and demonstrated a virtualized rendering strategy to improve application performance at production data volumes, allowing leadership to adopt the solution for broader use, meet scalability goals, and address client needs",
+        "Led implementation of a virtualized loading strategy to improve application performance at production data volumes, allowing leadership to adopt the solution for broader use and meet scalability goals",
         "Built an automated notification system for real-time summary reports on code contributions, streamlining the code review process by eliminating knowledge silos and improving team productivity",
-        "Oversaw end-to-end integration with AT&T’s global logon through OIDC authentication, serving as a critical milestone for the project by fulfilling security criteria to begin user testing",
+        "Responsible for overseeing end-to-end integration with AT&T’s global logon through OIDC authentication, achieving a critical milestone by meeting security requirements to begin user testing. Successfully advocated for stronger security protocols by proposing a solution that leveraged the project’s recent migration to Azure to better safeguard application credentials",
         "Proposed and led implementation of a dynamic routing solution for preserving client-side state between browser sessions, reducing database workloads and leading to a 6% reduction in the project’s projected cloud costs",
         "Tools Used: React JS, Node.js, Express.js, Azure Cloud, TypeScript, Figma, Git"
       ],
@@ -41,12 +41,12 @@ const experiences = [
       iconBg: "#fff",
       date: "September 2023 - July 2024",
       points: [  
-        "Joined a Series-A startup as an early engineer, becoming the second full-time hire after the CTO. Led full-stack development for a live web service, delivering end-to-end implementation of core site features. Key responsibilities included creating design documentation, designing a responsive UI, developing the frontend, and integrating backend services within a microservice architecture.",      
-        "Led efforts to streamline mobile responsiveness across the site, significantly improving the mobile user experience. This initiative directly led to a 43% growth in mobile traffic between Dec 2023 and June 2024",
+        "Joined a Series-A startup as the second full-time hire after the CTO. Responsible for full-stack development on a live web service, implementing core site features using Next.js, Node.js, and Firebase. Delivered features that supported rapid user adoption, scaling to 10,000+ active users within six months",
+        "Led efforts to streamline mobile responsiveness across the site, directly leading to a 43% growth in mobile traffic between Dec 2023 and June 2024",
         "Developed a microservice for monitoring user payments and processing rental data for external clients. Worked with clients to meet data format specifications and ensure smooth integration with existing services",
         "Implemented a real-time messaging feature, facilitating in-app communication to boost user engagement. Utilized a websocket based approach to sync user state and provide users with a real-time chat experience",
         "Responsible for delivering regular tech updates during stakeholder meetings, ensuring alignment between technical progress and business objectives",
-        "Tools Used: React JS, Next.js, Node.js, Express.js, Firebase, AWS, TypeScript, Git"
+        "Tools Used: React JS, Next.js, Node.js, Express.js, Firebase, GCP, TypeScript, Git"
       ],
     },
     {
