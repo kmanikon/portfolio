@@ -26,11 +26,12 @@ const experiences = [
       iconBg: "#fff",
       date: "July 2024 - Present",
       points: [  
-        //"Led UI-UX initiatives on my team by becoming their primary UI designer and collaborating closely with stakeholders to develop designs for the project's MVP. My work helped secure client approval in August, ensuring alignment with the Q4 delivery timeline",      
-        "Led implementation of a virtualized loading strategy to improve application performance at production data volumes, allowing leadership to adopt the solution for broader use and meet scalability goals",
-        "Built an automated notification system for real-time summary reports on code contributions, streamlining the code review process by eliminating knowledge silos and improving team productivity",
-        "Responsible for overseeing end-to-end integration with AT&T’s global logon through OIDC authentication, achieving a critical milestone by meeting security requirements to begin user testing. Successfully advocated for stronger security protocols by proposing a solution that leveraged the project’s recent migration to Azure to better safeguard application credentials",
-        "Proposed and led implementation of a dynamic routing solution for preserving client-side state between browser sessions, reducing database workloads and leading to a 6% reduction in the project’s projected cloud costs",
+        "Identified and addressed bottlenecks in application infrastructure by leveraging parallel data streams to efficiently handle high data volumes. Implemented benchmark criteria for performance testing, resulting in an 84% reduction in response times and enabling the downgrade of Snowflake data warehouses to optimize costs",
+        "Developed a caching service with the aim of reducing Snowflake egress costs. Expanded functionality to automate client onboarding tasks, reducing the project’s projected maintenance costs by $130,000 per year",
+        "Led UI-UX initiatives on my team by becoming their primary UI designer during MVP development. Collaborated closely with stakeholders to develop designs encompassing the project scope. My work helped secure client approval in August 2024, allowing the project stay on track to meet the Q4 delivery timeline",
+        "Responsible for overseeing end-to-end integration with AT&T’s global logon through OIDC authentication and managing security configurations for client side application credentials to maintain project compliance",
+        "Proposed and led implementation of a dynamic routing solution for preserving client-side state between browser sessions, reducing database workloads and leading to a 6% reduction in the project’s cloud costs",
+        "Built an automated notification system as a side project to provide real-time summary reports on pull requests, reducing turnaround time and improving developer efficiency by providing visibility on code contributions",
         "Tools Used: React JS, Node.js, Express.js, Azure Cloud, TypeScript, Figma, Git"
       ],
     },
@@ -41,7 +42,7 @@ const experiences = [
       iconBg: "#fff",
       date: "September 2023 - July 2024",
       points: [  
-        "Joined a Series-A startup as the second full-time hire after the CTO. Responsible for full-stack development on a live web service, implementing core site features using Next.js, Node.js, and Firebase. Delivered features that supported rapid user adoption, scaling to 10,000+ active users within six months",
+        "Joined a Series-A startup as the second full-time hire. Responsible for full-stack development on a live web service, implementing core site features using Next.js, Node.js, and Firebase. Delivered key functionality that supported rapid user adoption, helping scale the platform to 10,000+ active users within six months of launch",
         "Led efforts to streamline mobile responsiveness across the site, directly leading to a 43% growth in mobile traffic between Dec 2023 and June 2024",
         "Developed a microservice for monitoring user payments and processing rental data for external clients. Worked with clients to meet data format specifications and ensure smooth integration with existing services",
         "Implemented a real-time messaging feature, facilitating in-app communication to boost user engagement. Utilized a websocket based approach to sync user state and provide users with a real-time chat experience",
