@@ -32,7 +32,7 @@ const experiences = [
         "Oversaw end-to-end integration with AT&T’s global logon via OIDC authentication. Responsible for managing security configurations regarding client-side application credentials to maintain project compliance",
         "Proposed and led implementation of a dynamic routing solution for preserving client-side state between browser sessions, reducing database workloads and leading to a 6% reduction in the project’s cloud costs",
         "Built an automated notification system as a side project to provide real-time summary reports on pull requests, reducing turnaround time and improving developer efficiency by providing visibility on code contributions",
-        "Tools Used: React JS, Node.js, Express.js, Azure Cloud, Figma, Git"
+        "Tools Used: React JS, Node.js, Express.js, Snowflake SQL, Figma, Git"
       ],
     },
     {
