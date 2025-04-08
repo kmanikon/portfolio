@@ -19,7 +19,7 @@ const Home = () => {
           
             Welcome to my portfolio site! I'm a lifelong learner dedicated to building innovative and user-centric software. 
             With experience ranging from startup environments to enterprise software, I have a track record of building impactful, end-to-end software solutions addressing the needs of both businesses and users alike.
-            I love tackling complex challenges and am always eager to expand my skill set.
+            I love tackling user-facing challenges and am always eager to expand my skill set.
 
             Also, I'm a huge fan of Dungeons & Dragons.
           
