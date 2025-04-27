@@ -6,6 +6,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 */
 
+.navbarText {
+  
+}
+
+.navbarText:hover {
+    color: white;
+    cursor: pointer;
+}
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Raleway';

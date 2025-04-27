@@ -50,7 +50,7 @@ const Navbar = () => {
       {/* menu */}
       <ul className='hidden md:flex'>
         <li>
-          <Link to='home' smooth={true} duration={500}>
+          <Link className="navbarText" to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
@@ -62,24 +62,24 @@ const Navbar = () => {
         </li>
         */}
         <li>
-          <Link to='skills' smooth={true} duration={500}>
+          <Link className="navbarText" to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
 
         <li>
-          <Link to='about' smooth={true} duration={500}>
+          <Link className="navbarText" to='about' smooth={true} duration={500}>
             Experience
           </Link>
         </li>
 
         <li>
-          <Link to='work' smooth={true} duration={500}>
+          <Link className="navbarText" to='work' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
         <li>
-          <Link to='contact' smooth={true} duration={500}>
+          <Link className="navbarText" to='contact' smooth={true} duration={500}>
             Contact
           </Link>
         </li>
@@ -87,7 +87,9 @@ const Navbar = () => {
 
       {/* Hamburger */}
       <div onClick={handleClick} className='md:hidden z-10'>
-        {!nav ? <FaBars fontSize={32}/> : <FaTimes fontSize={32}/>}
+        <div className="navbarText">
+          {!nav ? <FaBars fontSize={32}/> : <FaTimes fontSize={32}/>}
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -99,31 +101,31 @@ const Navbar = () => {
         }
       >
         <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+          <Link className="navbarText" onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+          <Link className="navbarText" onClick={handleClick} to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+          <Link className="navbarText" onClick={handleClick} to='about' smooth={true} duration={500}>
             Experience
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+          <Link className="navbarText" onClick={handleClick} to='work' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <Link className="navbarText" onClick={handleClick} to='contact' smooth={true} duration={500}>
             Contact
           </Link>
         </li>
