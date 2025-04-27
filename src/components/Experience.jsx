@@ -185,12 +185,12 @@ const Experience = () => {
       */}
      <div className='mx-auto flex flex-col justify-center w-full'>
 
-      <p className='pt-20 mx-auto text-4xl font-bold flex justify-center'>Experience</p>
+      <p className='pt-20 mt-2 mx-auto text-4xl font-bold flex justify-center'>Experience</p>
 
     
 
         
-      <div className='mt-14 flex flex-col'>
+      <div className="experienceSpacing">
         <VerticalTimeline layout={'2-columns'}>
           {experiences.map((experience, index) => (
             <ExperienceCard

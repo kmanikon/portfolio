@@ -36,7 +36,7 @@ const Skills = () => {
       return (
         <div name='skills' className='pb-40 w-full h-auto bg-[#0a192f] text-gray-300 py-12'>
           {/* Container */}
-          <div className='pt-10 max-w-[1000px] mx-auto p-4 flex flex-col justify-center'>
+          <div className='pt-12 max-w-[1000px] mx-auto p-4 flex flex-col justify-center'>
             <div className="text-center">
               <p className='text-4xl font-bold'>Skills</p>
               <p className='py-4'></p>
