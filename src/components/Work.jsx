@@ -261,7 +261,7 @@ const Work = () => {
         {/* Container */}
         <div className='pt-10 max-w-[100%] mx-auto p-4 flex flex-col justify-center'>
           <div className="text-center">
-            <p className='text-4xl font-bold'>Projects</p>
+            <p className='text-4xl font-bold'>Personal Projects</p>
             <p className='py-4'></p>
           </div>
           
