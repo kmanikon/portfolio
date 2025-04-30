@@ -26,7 +26,7 @@ const experiences = [
       iconBg: "#fff",
       date: "July 2024 - Present",
       points: [  
-        "Identified and addressed bottlenecks in application infrastructure by leveraging parallel data streams to efficiently handle high data volumes. Implemented benchmark criteria for performance testing, measuring an 84% reduction in response times and enabling the downgrade of Snowflake data warehouses to optimize costs",
+        "Identified and addressed bottlenecks in application infrastructure by leveraging parallel data streams to efficiently handle high data volumes. Developed benchmark criteria for performance testing, measuring an 84% reduction in response times and enabling the downgrade of Snowflake data warehouses to optimize costs",
         "Developed a caching service with the aim of reducing Snowflake egress costs. Expanded functionality to automate client onboarding tasks, reducing the project’s projected maintenance costs by $130,000 per year",
         "Led UI-UX initiatives on my team by becoming their primary UI designer during MVP development. Collaborated closely with stakeholders to develop designs encompassing the project scope. My work helped secure client approval in August 2024, allowing the project stay on track to meet the Q4 delivery timeline",
         "Oversaw end-to-end integration with AT&T’s global logon via OIDC authentication. Responsible for managing security configurations regarding client-side application credentials to maintain project compliance",
