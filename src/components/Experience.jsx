@@ -26,28 +26,27 @@ const experiences = [
       iconBg: "#fff",
       date: "July 2024 - Present",
       points: [  
-        "Identified and addressed bottlenecks in application infrastructure by leveraging parallel data streams to efficiently handle high data volumes. Developed benchmark criteria for performance testing, measuring an 84% reduction in response times and enabling the downgrade of Snowflake data warehouses to optimize costs",
-        "Developed a caching service with the aim of reducing Snowflake egress costs. Expanded functionality to automate client onboarding tasks, reducing the project’s projected maintenance costs by $130,000 per year",
-        "Led UI-UX initiatives on my team by becoming their primary UI designer during MVP development. Collaborated closely with stakeholders to develop designs encompassing the project scope. My work helped secure client approval in August 2024, allowing the project stay on track to meet the Q4 delivery timeline",
-        "Oversaw end-to-end integration with AT&T’s global logon via OIDC authentication. Responsible for managing security configurations regarding client-side application credentials to maintain project compliance",
-        "Proposed and led implementation of a dynamic routing solution for preserving client-side state between browser sessions, reducing database workloads and leading to a 6% reduction in the project’s cloud costs",
-        "Built an automated notification system as a side project to provide real-time summary reports on pull requests, reducing turnaround time and improving developer efficiency by providing visibility on code contributions",
-        "Tools Used: React JS, Node.js, Express.js, Snowflake SQL, Figma, Git"
+        "Proposed and led implementation of a unified client-server caching strategy to reduce outgoing Snowflake requests, improving application performance and cutting database load by ~10%. Expanded functionality to automate client onboarding tasks, driving $185,000 in annual cost savings and operational benefits",
+        "Identified critical bottlenecks in application infrastructure and developed a parallel data streaming solution that increased capacity and cut response times by 40% on a key service, saving a projected 45,000 user-minutes annually. Enabled the team to optimize Snowflake costs, leading to $120,000 in total savings",
+        "Led UI-UX initiatives on my team by becoming their primary UI designer during MVP development. Collaborated closely with stakeholders to develop designs encompassing the project scope. My work helped secure client approval in August 2024, allowing the project to stay on track to meet the Q4 delivery timeline",
+        "Proactively identified service resiliency challenges and designed a solution automating server restarts, crash prevention, and Snowflake access recovery on an API server. This greatly improved system reliability, allowing the team to eliminate a recurring maintenance window and saving the company $90,000 annually",
+        "Served as the primary developer overseeing end-to-end integration with AT&T’s global logon and Halo OIDC authentication, achieving a key security milestone and enabling the start of user testing. Proposed and led implementation of an API gateway to enhance security and streamline access management across services, enabling faster user onboarding and allowing real-time monitoring for rapid response to security incidents",
+        "Tools Used: React JS, Node.js, Express.js, Snowflake, Azure Cloud, Figma, Git"
       ],
     },
     {
-      title: "Software Engineer",
+      title: "Software Engineer (Contract)",
       company_name: "EDUrain",
       icon: EDUrain,
       iconBg: "#fff",
       date: "September 2023 - July 2024",
       points: [  
         "Joined a Series-A startup as the second full-time hire. Responsible for full-stack development on a live web service, implementing core site features using Next.js, Node.js, and Firebase. Delivered key functionality that supported rapid user adoption, helping scale the platform to 10,000+ active users within six months of launch",
-        "Led efforts to streamline mobile responsiveness across the site, directly leading to a 43% growth in mobile traffic between Dec 2023 and June 2024",
+        "Led efforts to streamline mobile responsiveness across the site, significantly improving the mobile user experience. This initiative directly led to a 43% growth in mobile traffic between Dec 2023 and June 2024",
         "Developed a microservice for monitoring user payments and processing rental data for external clients. Worked with clients to meet data format specifications and ensure smooth integration with existing services",
         "Implemented a real-time messaging feature, facilitating in-app communication to boost user engagement. Utilized a websocket based approach to sync user state and provide users with a real-time chat experience",
-        "Responsible for delivering regular tech updates during stakeholder meetings, ensuring alignment between technical progress and business objectives",
-        "Tools Used: React JS, Next.js, Node.js, Express.js, Firebase, GCP, TypeScript, Git"
+        "Acted as the primary client contact over a span of six months, providing technical updates in stakeholder meetings to maintain alignment between technical progress, business goals, and stakeholder expectations",
+        "Tools Used: React JS, Next.js, Node.js, Express.js, GCP Firestore, TypeScript, Git"
       ],
     },
     {
@@ -57,9 +56,9 @@ const experiences = [
       iconBg: "#fff",
       date: "January 2023 - September 2023",
       points: [
-        "Helped develop a scalable travel platform that matches users with local businesses, employing cross-platform tools to design, implement, and refine full-stack application features for both Android and iOS environments",
+        "Developed core site features for a scalable SaaS platform, leveraging cross-platform tools to design, implement, and refine full-stack functionality and enhance the user experience across both Android and iOS",
         "Responsible for integrating single sign-on authentication support, implementing multi-factor authentication, and incorporating privacy-by-design principles to ensure compliance with data protection requirements",
-        "Tools Used: React Native, Node.js, JavaScript, React Native Testing Library, Figma Wireframes, Git"
+        "Tools Used: React Native, Node.js, JavaScript, React Native Testing Library, Figma, Git"
       ],
     },
     {
@@ -69,11 +68,12 @@ const experiences = [
       iconBg: "#fff",
       date: "October 2022 - December 2023",
       points: [
-        "Developed a camera system for identifying defective fruit varieties using ML and computer vision. Created scripts to automate development bottlenecks to facilitate implementation of an MVP",
+        "Developed an embedded system integrating an object detection ML model, contributing to model training and optimization. Automated development workflows, enabling MVP implementation and launch in Jan 2024",
         "Tools Used: Java, Python, OpenCV, PyTorch, TFLite, Jupyter Notebook, Git"
 
       ],
     },
+    /*
     {
       title: "Software Developer Intern",
       company_name: "Along Comes Hope",
@@ -86,6 +86,7 @@ const experiences = [
         "Tools Used: React JS, JavaScript, HTML / CSS, Git"
       ],
     },
+    */
   ];
   
   /*
