@@ -42,7 +42,7 @@ const projects = [
     linkUrl: "https://km-blockscape.vercel.app/",
   },
   {
-    name: "Churro Network Visualizer",
+    name: "Churro Network Visualizer2",
     description:
       "Visualization tool for network-ops teams. Offers a flexible workspace for designing network structure mappings and URL-based state saving for quick sharing and rollback.",
     tags: [
