@@ -55,6 +55,10 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
+        name: "MUI",
+        color: "blue-text-gradient",
+      },
+      {
         name: "Javascript",
         color: "green-text-gradient",
       },
