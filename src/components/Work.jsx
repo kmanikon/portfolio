@@ -6,6 +6,7 @@ import BugTrackerImg from '../assets/BugTrackerImg.png';
 import SoundbytesImg from '../assets/SoundbytesImg.png';
 import PasswordBuddyImg from '../assets/PasswordBuddyImg.png';
 import Acoustic_Release_Image_3 from '../assets/Acoustic_Release_Image_3.png';
+import ChurroImg from '../assets/ChurroImg.png';
 import Quakes_Page from '../assets/Quakes_Page.png';
 
 
@@ -41,39 +42,30 @@ const projects = [
     linkUrl: "https://km-blockscape.vercel.app/",
   },
   {
-    name: "Bug Tracker",
+    name: "Churro Network Visualizer",
     description:
-      "Project management tool tailored for developer teams. Features include a bulletin board, interactive user metrics, user management, real-time notifications, and a rollback feature that allows admins to undo previous changes.",
+      "Visualization tool for network-ops teams. Offers a flexible workspace for designing network structure mappings and URL-based state saving for quick sharing and rollback.",
     tags: [
-      {
-        name: "ASP.NET",
-        color: "pink-text-gradient",
-      },
       {
         name: "React",
         color: "pink-text-gradient",
       },
       {
-        name: "C#",
+        name: "React Flow",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MUI",
         color: "blue-text-gradient",
       },
       {
         name: "Javascript",
         color: "green-text-gradient",
       },
-      {
-        name: "SQLite",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Docker",
-        color: "pink-text-gradient",
-      },
-      
     ],
-    image: BugTrackerImg,
-    source_code_link: "https://github.com/kmanikon/Bug-Tracker",
-    linkUrl: "https://bug-tracker-km.vercel.app/login",
+    image: ChurroImg,
+    source_code_link: "https://github.com/kmanikon/Network-Visualizer",
+    linkUrl: "https://churro-network-visualizer.vercel.app/?flow=N4Igdg9gJgpgziAXAbVASyk80YFoDKArmAAT4wAOJATAIw0AM1ArDdYi4s-QOICyAFVwNmDBiQAUAYRhgALgCcAhgBsSAESUBPFWgDmACzkkBaALYwAlCAA0IOVoowsAY0Jw5EM7ZAUIcNDk0CDAkUAAPJAA2AA4GADoo2gBmaijUhloogHZkgBY7LSRk7ITaPJjs6mp82m5s5gBfOyglOSUwkBUlACMYFSwABSkfNBcQgUdnRBBhnwN-OTAlCyw+LRJhklofdxgFLABpPgAqM5PR8dDEUABrGCLEMEIVFTsFGAAzJGfXuwoFBAKAgbo1miAPG13FgAPJgXRgZx2fxYADqaDAUAgAHcEHYzEoXFg8gBBLgAIUQUSkiGy6kQMQAoogAJwAMR8cGxgRcBgA+n4FHIsNlaKUQGCbOhMDNILACMQyJQaPRqExWNUOMwuKx+EIRGJJDJ5Mo1JodPojCZzFYfA4nK53J5vP9-IFgtcIkhaLQYsx4mJMswooHytRCkhmDEWfEWTUWXlMlFqKU0uDWu1Ot0+gMZgAlCCEOT7S4TKZYAtFkvvQvFhR85arGYCeDGSt17Y+QVyEEgFlxagFEgxNXMUuekD3R6-N4gD7fJ4vWcAoEg4CSiHtOTQmZwhFIkBmHC5kAkhRoSEkRkw-AkPLxfLxagcuyfNAKMzYpQfLC0eL35Iu0BTxxhPG9Bg5SVpSwOU8CIUhyCoOhGBYNgOCiRAGCiEg9WEURxGkWRFFUDRtF0QxjFMCxrDse1phANwPC8Ls3SCEJOkiVlshieIsmDftYkHbIcgjRA8n9BoGGSJIohySpKmodM2g6G4ul6fosHIBQADdqxAMYywdGYtN0g47DgfZTIbFZ6JbDwlR0-ZOzsNAKD5JQoCgD44F7VIH2ofz-zHFyrk6KcfiXd4vgiv5fEBYEwg3SFt17PcMQPFEZnUGAejQJRQhrFR6PwLQ4FwEkoDMDEfGUFxbiwKQpFwP8GFwGNqAlZpoNlHAFQQ5VkLVVDNTSLgWRwwQ8MNQiTRI81yKtKjbVo8sZkY50WICNiJ04rIWQSdI6gaGI8jSBTROoFk-xOuIZOYbiUwTJTM1U7MNPzWs9IMsBJiMkB2z0wEq3rRt6MZKA9BgEgAYUEhMhYoVe1oDqQvY1TwsXWL5xi5d4rXJKtx3EA0sRHwj1gE8ACliFcpy+AADTVPIfDfD8vx-GY1SfPNAP+YCIFArByR4QZOqlfSZWweV4KVJDVXVNCU0QZGJv1fCjSI01SItCjrWou1VoYp1mNdLaPQ471kz-fs8hDMU6G45HRNwKJ-RiZIYjifIbaqWhnpU0A3pPEyvquX7issvSLMckGbLRHKHNMuGdhctyPK8+AkbjXjYl43iGHHMKHhxqKFxnPnV0S8FkqJkmMt7ABVHpiG3NgA2Zwr6NRHKasJer8z7kgSR2MEAF07BgCH4CQVAJawPBYL62WVRQjV2E4bhVamgjjWIs0yMtSibUsXBF5lxCV6GtetR1LeDR3zW5oP3WlpPsUo24Op7pZKIWU5QsFAuHomfRUF9BoKxGtqTeuF74a1mvvHWi1j52m-JDYUPVpagIGvLYa68oG6kmrAmae9tYLSPvrFaf0PCUDJt+e4ChGSYk6HRLA35ATYglHYfK5g2iTyQIoQgMAupzxmAvXq59sGr0VlA3ghD1bEK1vNQ+esrCn3EVguWUiRoYSwnfeRu9FHPyQdRZqx1P5JGSCyD2-9CCAOAeo-qmir7SK4LItW00DFP0QeQ5a9hUEwHQVLOCGjL4QPXjo7CMD9GPwQWQlRNF7CG2oRQWhCh6GMJlKAFhMw2E4k4SAbhBJiwygEUI8WGB55qMwY40JuCb7MAIe4h+8DSHKNflU4JNTwF1NGswcaUSPExNaS-Y+piP4+mTImU6Ni7EwQccvbp18N6NO3nAkhSiRkUL8QoNBczqkLJwUsjCfS9GDJaRs4xvjsmbhofiOh+wMnMMNrkjh4JCm8JKQoQRwiKmiI6UvMBhzFbHP6XIs56yjE+JPiArpQKRrZGVtQU5zSIXePiWMv0EySj3RThCABQC9mdIOVo8JY1kVrMMWi1+KCdkBMJQCyRzj4WIvJQorxcTqWUPosk1J6SmGqWuS8-J7zin8K+UI0ejQgA",
   },
   {
     name: "Password Buddy",
@@ -108,6 +100,41 @@ const projects = [
     image: PasswordBuddyImg,
     source_code_link: "https://github.com/kmanikon/Password-Manager",
     linkUrl: "https://password-buddy.vercel.app/",
+  },
+  {
+    name: "Bug Tracker",
+    description:
+      "Project management tool tailored for developer teams. Features include a bulletin board, interactive user metrics, user management, real-time notifications, and a rollback feature that allows admins to undo previous changes.",
+    tags: [
+      {
+        name: "ASP.NET",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "C#",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SQLite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "pink-text-gradient",
+      },
+      
+    ],
+    image: BugTrackerImg,
+    source_code_link: "https://github.com/kmanikon/Bug-Tracker",
+    linkUrl: "https://bug-tracker-km.vercel.app/login",
   },
   {
     name: "Quake Search",
