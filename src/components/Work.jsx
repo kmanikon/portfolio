@@ -237,13 +237,12 @@ const Work = () => {
               <div className='absolute right-0 top-0 flex justify-end m-3 card-img_hover w-10 h-10 '>
                 <div
                   onClick={() => window.open(source_code_link, "_blank")}
-                  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-[black]'
+                  className='black-gradient w-9 h-9 rounded-full flex justify-center items-center cursor-pointer bg-[black]'
                 >
                   <img
                     src={github}
                     alt='source code'
-                    className='w-5/6 h-5/6 object-contain'
-                    style={{zIndex: 30}}
+                    className='w-8/9 h-8/9 object-contain'
                   />
                 </div>
               </div>
