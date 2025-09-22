@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 src/assets/Resume_OLD.pdf
 src/assets/KM_Cover_Letter.pdf
+
+package-lock.json
