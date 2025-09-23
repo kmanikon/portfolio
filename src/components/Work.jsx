@@ -276,6 +276,7 @@ const Work = () => {
             <ProjectCard key={`project-${2}`} index={2} {...projects[1]} />
             <ProjectCard key={`project-${3}`} index={3} {...projects[2]} />
             <ProjectCard key={`project-${4}`} index={4} {...projects[3]} />
+            <ProjectCard key={`project-${5}`} index={5} {...projects[4]} />
         </div>
       );
     };
