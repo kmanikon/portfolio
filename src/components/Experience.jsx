@@ -43,7 +43,7 @@ const experiences = [
       date: "September 2023 - July 2024",
       points: [  
         "Joined a Series-A startup as the second full-time hire. Responsible for full-stack development on a live web service, implementing core site features using Next.js, Node.js, and Firebase. Delivered key functionality that supported rapid user adoption, helping scale the platform to 10,000+ active users within six months of launch",
-        "Led a site-wide initiative to streamline mobile responsiveness in the flagship Next.js site, greatly improving mobile experience, driving a 43% rise in mobile traffic in Q1 2024 with a 26% increase in overall usership",
+        "Led a site-wide initiative to streamline mobile responsiveness in the flagship Next.js site, greatly improving the mobile experience, driving a 43% rise in mobile traffic in Q1 2024 and a 26% increase in overall usership",
         "Developed a Node.js microservice for tracking user payments and processing rental data for external clients. Worked with clients to meet data format specifications and ensure smooth integration with existing services",
         "Acted as the primary client contact over a span of six months, providing technical updates in stakeholder meetings to maintain alignment between technical progress, business goals, and stakeholder expectations",
         "Tools Used: React JS, Next.js, Node.js, Express.js, GCP Firestore, TypeScript, Git"
