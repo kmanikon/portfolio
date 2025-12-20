@@ -17,43 +17,43 @@ const Home = () => {
         
         <p className='text-[#8892b0] py-4 max-w-[700px]'>
           
-            Welcome to my portfolio site! I'm a lifelong learner dedicated to building innovative and user-centric software. 
-            With experience ranging from startup environments to enterprise software, I have a track record of building impactful, end-to-end software solutions addressing the needs of both businesses and users alike.
-            I love tackling user-facing challenges and am always eager to expand my skill set.
-
-            Also, I'm a huge fan of Dungeons & Dragons.
+            Welcome to my portfolio site! I’m a lifelong learner with experience creating end-to-end software solutions 
+            for both startups and enterprise systems. I thrive on solving user-facing challenges and continuously
+            expanding my skillset. Also, I’m a huge D&D fan.
           
         </p>
           
 
-        <div style={{display: 'flex'}}>
-        <div>
-        <Link to='about' smooth={true} duration={500}>
-          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-            
-              View Work
-            
-            <span className='group-hover:rotate-90 duration-300'>
-              <HiArrowNarrowRight className='ml-3 ' />
+       <div className="my-4 flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-5">
+        <Link to="about" smooth={true} duration={500}>
+          <button className="group flex items-center justify-center w-full sm:w-auto px-5 py-3 border-2 border-[#ccd6f6] text-[#ccd6f6] rounded-lg bg-transparent hover:bg-pink-600 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-sm">
+            Experience
+            <span className="ml-3 transform group-hover:rotate-90 transition-transform duration-300">
+              <HiArrowNarrowRight />
             </span>
           </button>
-          </Link>
-        </div>
+        </Link>
 
-        <div style={{marginLeft: '20px'}}>
-        <Link to='skills' smooth={true} duration={500}>
-          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-            
-              View Skills
-            
-            <span className='group-hover:rotate-90 duration-300'>
-              <HiArrowNarrowRight className='ml-3 ' />
+        <Link to="skills" smooth={true} duration={500}>
+          <button className="group flex items-center justify-center w-full sm:w-auto px-5 py-3 border-2 border-[#ccd6f6] text-[#ccd6f6] rounded-lg bg-transparent hover:bg-pink-600 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-sm">
+            Skills
+            <span className="ml-3 transform group-hover:rotate-90 transition-transform duration-300">
+              <HiArrowNarrowRight />
             </span>
           </button>
-          </Link>
-        </div>
+        </Link>
 
-        </div>
+        <Link to="work" smooth={true} duration={500}>
+          <button className="group flex items-center justify-center w-full sm:w-auto px-5 py-3 border-2 border-[#ccd6f6] text-[#ccd6f6] rounded-lg bg-transparent hover:bg-pink-600 hover:text-white transition-all duration-300 transform hover:scale-105 shadow-sm">
+            Projects
+            <span className="ml-3 transform group-hover:rotate-90 transition-transform duration-300">
+              <HiArrowNarrowRight />
+            </span>
+          </button>
+        </Link>
+      </div>
+
+
 
       </div>
     </div>

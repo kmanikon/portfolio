@@ -8,13 +8,37 @@ import PasswordBuddyImg from '../assets/PasswordBuddyImg.png';
 import Acoustic_Release_Image_3 from '../assets/Acoustic_Release_Image_3.png';
 import ChurroImg from '../assets/ChurroImg.png';
 import Quakes_Page from '../assets/Quakes_Page.png';
+import EONET_Globe from '../assets/EONETGlobe.png';
 
 
 const projects = [
   {
+    name: "NASA EONET Map",
+    description:
+      "Interactive 3D globe displaying real-time natural events from NASA’s EONET (Earth Observatory Natural Event Tracker) API.",
+    tags: [
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Three.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: EONET_Globe,
+    source_code_link: "https://github.com/kmanikon/NASA-EONET-Visual",
+    linkUrl: "https://kmanikon.github.io/NASA-EONET-Visual/"
+    //linkUrl: "https://km-blockscape.vercel.app/",
+  },
+  {
     name: "Blockscape",
     description:
-      "Browser-based 3D sandbox enviorment built in React and Three.js. Utilizes a Supabase serverless client and PostgresSQL database to store user projects. Features custom camera controls for mobile accessibility.",
+      "Browser-based 3D sandbox built with React and Three.js. Uses a PostgreSQL server hosted on Supabase to store user projects.",
     tags: [
       {
         name: "React",
@@ -29,10 +53,6 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "Supabase",
-        color: "pink-text-gradient",
-      },
-      {
         name: "Javascript",
         color: "green-text-gradient",
       },
@@ -45,7 +65,7 @@ const projects = [
   {
     name: "Churro Network Visualizer",
     description:
-      "Visualization tool for network-ops teams. Offers a flexible workspace for designing network structure mappings and URL-based state saving for quick sharing and rollback.",
+      "Visualization tool for displaying network elements. Makes use of URL-based state for quick sharing and rollback.",
     tags: [
       {
         name: "React",
@@ -54,10 +74,6 @@ const projects = [
       {
         name: "React Flow",
         color: "pink-text-gradient",
-      },
-      {
-        name: "MUI",
-        color: "blue-text-gradient",
       },
       {
         name: "Javascript",
@@ -72,7 +88,7 @@ const projects = [
   {
     name: "Password Buddy",
     description:
-      "Web-based password manager that stores passwords in the cloud. Utilizes AES encryption and session tokens to secure credentials and prevent unauthorized access. Supports visibility options for ease of use.",
+      "Cloud-based password manager with AES-encrypted credentials and session-token security. Hosted on GCP using Docker.",
       tags: [
       {
         name: "React",
@@ -80,10 +96,6 @@ const projects = [
       },
       {
         name: "Node.js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Express",
         color: "pink-text-gradient",
       },
       {
@@ -106,7 +118,7 @@ const projects = [
   {
     name: "Bug Tracker",
     description:
-      "Project management tool tailored for developer teams. Features include a bulletin board, interactive user metrics, user management, real-time notifications, and a rollback feature that allows admins to undo previous changes.",
+      "Mockup project management dashboard for dev teams. Features interactive user metrics, user management, notifications, and a bulletin board.",
     tags: [
       {
         name: "ASP.NET",
@@ -270,15 +282,12 @@ const Work = () => {
       );
     };
 
-    const ProjectList = () => {
-
+    const ProjectList = ({ projects }) => {
       return (
-        <div className="min-w-[100%] ontainer flex flex-wrap gap-4 justify-center">
-            <ProjectCard key={`project-${1}`} index={1} {...projects[0]} />
-            <ProjectCard key={`project-${2}`} index={2} {...projects[1]} />
-            <ProjectCard key={`project-${3}`} index={3} {...projects[2]} />
-            <ProjectCard key={`project-${4}`} index={4} {...projects[3]} />
-            <ProjectCard key={`project-${5}`} index={5} {...projects[4]} />
+        <div className="min-w-[100%] flex flex-wrap gap-4 justify-center">
+          {projects?.map((project, i) => 
+            <ProjectCard key={`project-${i}`} index={i} {...project}  />
+          )}
         </div>
       );
     };
@@ -294,11 +303,16 @@ const Work = () => {
             <p className='py-4'></p>
           </div>
           
-          <div>
-            <ProjectList />
-          </div>
+          <ProjectList projects={projects.slice(0,3)}/>
+
+          <hr className="border-gray-400 border my-10 w-3/4 mx-auto" />
+
+          <ProjectList projects={projects.slice(3)}/>
+
+
         </div>
-      </div>
+
+    </div>
     
       {/*}
       <div>
