@@ -253,6 +253,7 @@ const ProjectsTab = ({ mobile = false }) => {
         gap: '24px',
         padding: '0 24px',
         justifyContent: 'center',
+        justifyItems: mobile ? 'center' : 'stretch',
         maxWidth: '1360px',
         margin: '0 auto',
       }}

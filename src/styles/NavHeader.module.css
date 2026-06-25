@@ -1,14 +1,48 @@
 .navHeader {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: relative;
     gap: 12px;
-    padding: 4px 0;
 }
 
 .mobileNavHeader {
+    flex-direction: column;
+    align-items: stretch;
     gap: 8px;
+}
+
+.mobileNavTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 12px 12px;
+    background: rgba(15, 23, 42, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.mobileNavLabel {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+}
+
+.mobileNavMenu {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(15, 23, 42, 0.96);
+    border-radius: 14px;
+}
+
+.openMobileMenu {
+    display: flex;
 }
 
 .navButton {
@@ -16,6 +50,12 @@
     padding: 8px 14px;
     transition: color 0.1s, background-color 0.1s;
     color: rgba(248, 250, 252, 0.8) !important;
+}
+
+.mobileNavMenu .navButton {
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 12px;
 }
 
 .navButton:hover {
