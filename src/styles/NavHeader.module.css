@@ -1,0 +1,18 @@
+.navHeader {
+    display: flex;  
+}
+
+.navButton {
+    min-height: 32px;
+    transition: color 0.1s;
+}
+
+.navButton:hover {
+    color: lightgray !important;
+}
+
+.activeNavButton {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
