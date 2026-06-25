@@ -30,7 +30,7 @@ export default function HomeTab({ mobile = false }) {
     {
       title: 'Tech Stack',
       description: [
-        'React • Next.js • Node.js • Django • Docker • Azure • GCP',
+        'React • Next.js • Node.js • Django • Docker • Azure',
         'Python • JavaScript • TypeScript • SQL • HTML/CSS',
       ],
       dimensions: '2x1',
