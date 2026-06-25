@@ -1,14 +1,25 @@
 .navHeader {
-    display: flex;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 0;
+}
+
+.mobileNavHeader {
+    gap: 8px;
 }
 
 .navButton {
     min-height: 32px;
-    transition: color 0.1s;
+    padding: 8px 14px;
+    transition: color 0.1s, background-color 0.1s;
+    color: rgba(248, 250, 252, 0.8) !important;
 }
 
 .navButton:hover {
-    color: lightgray !important;
+    color: #ffffff !important;
 }
 
 .activeNavButton {

@@ -11,11 +11,11 @@ const links = [
 ];
 
 export default function NavHeader({ mobile = false, activeTab = 'home', onTabChange = () => {} }) {
-
-  const btnSize = "22"
+  const btnSize = mobile ? 'sm' : 'md';
+  const navClassName = `${styles.navHeader} ${mobile ? styles.mobileNavHeader : ''}`;
 
   return (
-    <div className={styles.navHeader}>
+    <div className={navClassName}>
       {links.map(({ key, label }) => (
         <Button
           key={key}

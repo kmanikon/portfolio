@@ -37,10 +37,13 @@ export default function HomeTab({ mobile = false }) {
     },
   ];
 
+  const mobileOrder = [3, 2, 4, 0, 1];
   const mobileDirections = ['right', 'right', 'right', 'right', 'right'];
   const desktopDirections = ['right', 'down', 'up', 'none', 'left'];
   const mobileDelays = [100, 200, 300, 400, 500];
   const desktopDelays = [100, 300, 500, 700, 900];
+
+  const orderedCards = mobile ? mobileOrder.map((index) => cards[index]) : cards;
 
   return (
     <div
@@ -51,7 +54,7 @@ export default function HomeTab({ mobile = false }) {
         padding: '0 24px',
       }}
     >
-      {cards.map((card, index) => (
+      {orderedCards.map((card, index) => (
         <MotionCard
           key={card.title}
           title={card.title}
