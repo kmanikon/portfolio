@@ -30,7 +30,7 @@ export default function HomeTab({ mobile = false }) {
     {
       title: 'Tech Stack',
       description: [
-        'React • Next.js • Node.js • Django • Docker • Azure',
+        'React • Next.js • Node.js • Django • Docker • Snowflake • Azure',
         'Python • JavaScript • TypeScript • SQL • HTML/CSS',
       ],
       dimensions: '2x1',
@@ -50,6 +50,8 @@ export default function HomeTab({ mobile = false }) {
       style={{
         display: 'grid',
         gridTemplateColumns: mobile ? '1fr' : 'repeat(3, 1fr)',
+        gridAutoRows: mobile ? 'auto' : 'minmax(200px, auto)',
+        alignContent: 'stretch',
         gap: '24px',
         padding: '0 24px',
       }}

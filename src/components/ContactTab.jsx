@@ -103,7 +103,7 @@ export default function ContactTab({ mobile = false }) {
 const inputStyle = {
   backgroundColor: '#0f172a',
   color: '#e2e8f0',
-  border: '1px solid rgba(148, 163, 184, 0.22)',
+  border: '1px solid rgba(148, 163, 184, 0.58)',
   borderRadius: '8px',
   padding: '16px 18px',
   fontSize: '1rem',
