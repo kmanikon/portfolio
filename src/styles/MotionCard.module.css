@@ -1,5 +1,5 @@
 .cardWrapper {
-  transition: all 0.7s ease-out;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
 .cardWrapperVisible {
