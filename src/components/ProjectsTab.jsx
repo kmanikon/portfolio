@@ -219,12 +219,14 @@ const ProjectCard = ({ project }) => {
             Go To Project
           </div>
         </a>
-        <div
+        <a
+          href={project.source_code_link}
+          target="_blank"
+          rel="noopener noreferrer"
           style={cardStyles.iconButton}
-          onClick={() => window.open(project.source_code_link, '_blank')}
         >
           <img src={github} alt="source code" style={cardStyles.icon} />
-        </div>
+        </a>
       </div>
 
       <div style={cardStyles.body}>

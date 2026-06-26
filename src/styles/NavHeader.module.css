@@ -50,6 +50,17 @@
     padding: 8px 14px;
     transition: color 0.1s, background-color 0.1s;
     color: rgba(248, 250, 252, 0.8) !important;
+    font-family: var(--font-head);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.mobileNavLabel {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    font-family: var(--font-head);
+    font-weight: 500;
 }
 
 .mobileSocialButtons {
@@ -124,7 +135,7 @@
 
 .activeNavButton {
     color: #ffffff !important;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* At narrower desktop widths, stack social icons below the main nav to avoid overlap */
