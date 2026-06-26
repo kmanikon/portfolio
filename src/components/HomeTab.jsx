@@ -40,8 +40,8 @@ export default function HomeTab({ mobile = false }) {
   const mobileOrder = [3, 2, 4, 0, 1];
   const mobileDirections = ['right', 'right', 'right', 'right', 'right'];
   const desktopDirections = ['right', 'down', 'up', 'none', 'left'];
-  const mobileDelays = [100, 200, 300, 400, 500];
-  const desktopDelays = [100, 300, 500, 700, 900];
+  const mobileDelays = [100, 200, 300, 600, 900];
+  const desktopDelays = [300, 500, 700, 0, 900];
 
   const orderedCards = mobile ? mobileOrder.map((index) => cards[index]) : cards;
 

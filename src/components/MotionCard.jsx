@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from '../styles/MotionCard.module.css';
 
 const MotionCard = ({ title, description, direction, delay, dimensions = '1x1', type = 'card', mobile = false }) => {
-  const [isVisible, setIsVisible] = useState(direction === "none");
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -14,6 +14,10 @@ const MotionCard = ({ title, description, direction, delay, dimensions = '1x1', 
   const getTransformClass = () => {
     if (isVisible) return styles.cardWrapperVisible;
     
+    if (direction === 'none') {
+      return styles.cardWrapperFadeHidden;
+    }
+
     switch (direction) {
       case 'up':
         return styles.cardWrapperUp;
