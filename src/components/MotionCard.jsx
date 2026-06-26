@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from '../styles/MotionCard.module.css';
 
 const MotionCard = ({ title, description, direction, delay, dimensions = '1x1', type = 'card', mobile = false }) => {
-  const [isVisible, setIsVisible] = useState(!(delay > 0));
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -37,7 +37,7 @@ const MotionCard = ({ title, description, direction, delay, dimensions = '1x1', 
   };
 
   return (
-    <div className={`${styles.cardWrapper} ${getTransformClass()} ${getDimensionClass()}`}>
+    <div className={`${delay > 0 ? styles.cardWrapper : styles.cardWrapperCenter} ${getTransformClass()} ${getDimensionClass()}`}>
       <div className={styles.card} style={type === 'text' ? { textAlign: mobile ? 'center' : 'left'} : {}}>
         <div className={styles.cardContent}>
           {type !== 'logo' && (
