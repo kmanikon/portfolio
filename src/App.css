@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+  background-color: #0b1220;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.pageShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  flex-direction: column;
+  /* background: linear-gradient(to bottom right, #111827, #000000); */
+}
+
+.pageInner {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 24px 24px;
+}
+
+.pageHeader {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+  background: rgba(11, 18, 32, 0.92);
+  backdrop-filter: blur(16px);
+}
+
+.pageContent {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  overscroll-behavior: contain;
+}
+
+.pageContent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.pageContent::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.03);
+  border-radius: 999px;
+}
+
+.pageContent::-webkit-scrollbar-thumb {
+  background: rgba(148,163,184,0.35);
+  border-radius: 999px;
+}
+
+.pageContent:hover::-webkit-scrollbar-thumb {
+  background: rgba(148,163,184,0.55);
+}
+
+.pageContent {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148,163,184,0.35) rgba(255,255,255,0.03);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
