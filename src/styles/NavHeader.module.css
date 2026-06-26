@@ -127,3 +127,25 @@
     font-weight: 600;
 }
 
+/* At narrower desktop widths, stack social icons below the main nav to avoid overlap */
+@media (max-width: 1000px) {
+    .navRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .socialButtons {
+        position: static;
+        transform: none;
+        right: auto;
+        top: auto;
+        justify-content: center;
+    }
+
+    /* Ensure nav buttons wrap nicely when stacked */
+    .navButtons {
+        justify-content: center;
+    }
+}
+
