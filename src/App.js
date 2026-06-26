@@ -84,7 +84,7 @@ function App() {
     <MantineProvider theme={theme}>
       <div className="App">
         <div className="pageShell">
-          <div className="pageInner">
+          <div className="pageInner" style={{paddingBottom: isMobile ? 48 : 24}}>
             <div className="pageHeader">
               <NavHeader
                 activeTab={activeTab}
