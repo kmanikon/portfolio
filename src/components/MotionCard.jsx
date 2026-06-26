@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from '../styles/MotionCard.module.css';
 
 const MotionCard = ({ title, description, direction, delay, dimensions = '1x1', type = 'card', mobile = false }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(!(delay > 0));
 
   useEffect(() => {
     const timer = setTimeout(() => {
