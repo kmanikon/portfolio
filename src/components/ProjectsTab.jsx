@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import github from '../assets/github.png';
 import BlockscapeImg from '../assets/BlockscapeImg.png';
 import BugTrackerImg from '../assets/BugTrackerImg.png';
@@ -111,19 +111,22 @@ const cardStyles = {
     position: 'relative',
     width: '100%',
     height: '240px',
-    // Belt-and-suspenders: aspect-ratio backs up the fixed height so the
-    // box is reserved correctly even before the browser knows the image's
-    // own intrinsic size. This is what stops the post-load height snap.
-    aspectRatio: '7 / 4',
     borderRadius: '20px',
     overflow: 'hidden',
     marginBottom: '18px',
+    backgroundColor: 'rgba(148, 163, 184, 0.18)', // grey placeholder, visible until image resolves
   },
   image: {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
     display: 'block',
+  },
+  placeholder: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(255, 255, 255, 0.76)',
+    backdropFilter: 'blur(16px) saturate(180%)',
   },
   overlay: {
     position: 'absolute',
@@ -198,6 +201,71 @@ const cardStyles = {
   },
 };
 
+// --- Image preloader cache for use with Suspense ---
+// React's Suspense only works with things that can "throw a promise."
+// <img> tags don't do this natively, so we maintain a small cache here:
+// the first time an image is requested we kick off loading + decoding
+// and throw the in-flight promise (which Suspense catches and waits on).
+// Once resolved, subsequent reads return instantly and render for real.
+const imageCache = new Map();
+
+function loadImage(src) {
+  if (imageCache.has(src)) {
+    return imageCache.get(src);
+  }
+
+  const entry = { status: 'pending', src };
+  const promise = new Promise((resolve, reject) => {
+    const img = new Image();
+    img.src = src;
+    img.onload = () => {
+      // decode() ensures the bitmap is fully ready to paint, not just
+      // that bytes arrived — this is what prevents any partial/garbled
+      // intermediate frame from ever being shown.
+      const finish = () => {
+        entry.status = 'resolved';
+        resolve();
+      };
+      if (img.decode) {
+        img.decode().then(finish).catch(finish);
+      } else {
+        finish();
+      }
+    };
+    img.onerror = (err) => {
+      entry.status = 'rejected';
+      reject(err);
+    };
+  });
+
+  entry.promise = promise;
+  imageCache.set(src, entry);
+  return entry;
+}
+
+function useSuspenseImage(src) {
+  const entry = loadImage(src);
+  if (entry.status === 'pending') {
+    throw entry.promise;
+  }
+  if (entry.status === 'rejected') {
+    // Treat a failed load as "resolved" for rendering purposes — we still
+    // render the <img> tag so the browser's native broken-image behavior
+    // takes over, rather than suspending forever.
+    return;
+  }
+  return;
+}
+
+// Renders the real <img> only once it's confirmed loaded + decoded.
+// This component is the thing Suspense actually waits on.
+const SuspendedImage = ({ src, alt, style }) => {
+  useSuspenseImage(src);
+  return <img src={src} alt={alt} style={style} />;
+};
+
+const GreyPlaceholder = () => <div style={cardStyles.placeholder} />;
+
 const ProjectCard = ({ project }) => {
   const [hovered, setHovered] = React.useState(false);
 
@@ -209,13 +277,13 @@ const ProjectCard = ({ project }) => {
     >
       <div style={cardStyles.imageWrapper}>
         <a href={project.linkUrl} target="_blank" rel="noopener noreferrer">
-          <img
-            src={project.image}
-            alt={project.name}
-            width={420}
-            height={240}
-            style={cardStyles.image}
-          />
+          <Suspense fallback={<GreyPlaceholder />}>
+            <SuspendedImage
+              src={project.image}
+              alt={project.name}
+              style={cardStyles.image}
+            />
+          </Suspense>
           <div
             style={{
               ...cardStyles.overlay,
@@ -231,13 +299,7 @@ const ProjectCard = ({ project }) => {
           rel="noopener noreferrer"
           style={cardStyles.iconButton}
         >
-          <img
-            src={github}
-            alt="source code"
-            width={40}
-            height={40}
-            style={cardStyles.icon}
-          />
+          <img src={github} alt="source code" style={cardStyles.icon} />
         </a>
       </div>
 
@@ -264,11 +326,6 @@ const ProjectsTab = ({ mobile = false }) => {
       style={{
         display: 'grid',
         gridTemplateColumns: mobile ? '1fr' : 'repeat(3, minmax(0, 1fr))',
-        // alignItems stretch (the default) is what causes a one-time
-        // row-height recalculation once images finish loading. Setting
-        // it to 'start' makes every card size to its own content
-        // immediately, instead of waiting on the row's tallest sibling.
-        alignItems: 'start',
         gap: '24px',
         padding: '0 24px',
         justifyContent: 'center',
