@@ -111,6 +111,10 @@ const cardStyles = {
     position: 'relative',
     width: '100%',
     height: '240px',
+    // Belt-and-suspenders: aspect-ratio backs up the fixed height so the
+    // box is reserved correctly even before the browser knows the image's
+    // own intrinsic size. This is what stops the post-load height snap.
+    aspectRatio: '7 / 4',
     borderRadius: '20px',
     overflow: 'hidden',
     marginBottom: '18px',
@@ -208,6 +212,8 @@ const ProjectCard = ({ project }) => {
           <img
             src={project.image}
             alt={project.name}
+            width={420}
+            height={240}
             style={cardStyles.image}
           />
           <div
@@ -225,7 +231,13 @@ const ProjectCard = ({ project }) => {
           rel="noopener noreferrer"
           style={cardStyles.iconButton}
         >
-          <img src={github} alt="source code" style={cardStyles.icon} />
+          <img
+            src={github}
+            alt="source code"
+            width={40}
+            height={40}
+            style={cardStyles.icon}
+          />
         </a>
       </div>
 
@@ -252,6 +264,11 @@ const ProjectsTab = ({ mobile = false }) => {
       style={{
         display: 'grid',
         gridTemplateColumns: mobile ? '1fr' : 'repeat(3, minmax(0, 1fr))',
+        // alignItems stretch (the default) is what causes a one-time
+        // row-height recalculation once images finish loading. Setting
+        // it to 'start' makes every card size to its own content
+        // immediately, instead of waiting on the row's tallest sibling.
+        alignItems: 'start',
         gap: '24px',
         padding: '0 24px',
         justifyContent: 'center',
