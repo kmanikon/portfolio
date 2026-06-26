@@ -19,7 +19,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && node scripts/inline-build.js",
-    "build:inline": "npm run build && node scripts/inline-build.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
