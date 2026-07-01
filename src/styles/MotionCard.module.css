@@ -148,6 +148,35 @@
   margin: 0;
 }
 
+@media (max-height: 840px) {
+  .card {
+    min-height: 150px;
+  }
+
+  .cardContent {
+    padding: 26px;
+  }
+
+  .cardTitle,
+  .mainCardTitle {
+    font-size: 28px;
+  }
+
+  .cardDescription {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .mainCardDescription {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .logoImage {
+    height: 85px;
+  }
+}
+
 
 /* Mobile: force all cards to full width */
 @media (max-width: 768px) {

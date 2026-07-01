@@ -76,6 +76,22 @@
   pointer-events: none;
 }
 
+.homeGrid {
+  grid-auto-rows: minmax(200px, auto) !important;
+}
+
+@media (max-height: 840px) {
+  .homeGrid {
+    grid-auto-rows: minmax(140px, auto) !important;
+  }
+}
+
+@media (max-height: 700px) {
+  .homeGrid {
+    grid-auto-rows: minmax(120px, auto) !important;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -47,8 +47,11 @@ export default function HomeTab({ mobile = false }) {
 
   return (
     <div
+      className="homeGrid"
       style={{
         display: 'grid',
+        minHeight: mobile ? 'auto' : '100%',
+        height: mobile ? 'auto' : '100%',
         gridTemplateColumns: mobile ? '1fr' : 'repeat(3, 1fr)',
         gridAutoRows: mobile ? 'auto' : 'minmax(200px, auto)',
         alignContent: 'stretch',
